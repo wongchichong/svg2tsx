@@ -1,0 +1,1285 @@
+﻿/* :root {
+    --background: white;
+    --outter    : #514426;
+    --内盘        : #62563a;
+    --外盘        : #a79567;
+    --内盘宫       : #FEFACB;
+    --外盘宫       : #ffffff;
+    --金bg       : #fff16e88;
+    --木bg       : #A5D6A788;
+    --水bg       : #9FA8DA88;
+    --火bg       : #EF9A9A88;
+    --土bg       : #BCAAA488;
+    --木         : #0C6F10;
+    --火         : #ab0f0f;
+    --土         : #702c14;
+    --金         : #978b09;
+    --水         : #1253bc;
+    --时         : #4CAF50;
+    --日         : #4CAF50;
+
+    --阴: #ab0f0f;
+
+    --line     : #514426;
+    --lineWidth: 4px;
+    --字        : #efd8ca;
+    --空        : #dfc8ba;
+
+    --吉: red;
+    --凶: black;
+    --平: green;
+} */
+
+@import url("core.css");
+
+#奇门遁甲 {
+    .阴.局 {
+        color: var(--阴);
+    }
+
+    background-color: var(--background);
+}
+
+div.奇门遁甲宫 #qmdj_table {
+    width           : fit-content;
+    /* webpackIgnore: true */
+    /* webpackIgnore: true */
+    background      : linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(./images/logo-red-full-padding.svg) center no-repeat;
+    background-size : contain;
+    vertical-align  : middle;
+}
+
+table#qmdj_desc {
+    padding: 10px;
+
+    &,
+    td,
+    tr {
+        border         : 1px solid darkgray;
+        border-collapse: collapse;
+    }
+
+    /* position: absolute;
+  width   : 80vw;
+  border  : 1px;
+  top     : 800px;
+  left    : 20px; */
+    .标 {
+        background-color: #A8A8A8;
+        text-align      : center;
+    }
+
+    .副标 {
+        color           : white;
+        background-color: black;
+        font-weight     : bold;
+        text-align      : center;
+
+        .格 {
+            width: 6em
+        }
+
+        .吉凶 {
+            width     : 3em;
+            text-align: center;
+        }
+    }
+
+    .描述 {
+        width: 30em
+    }
+
+
+    .向,
+    .格,
+    .吉凶 {
+        text-align: center;
+    }
+}
+
+#qmdj_天赋 {
+    padding: 10px;
+}
+
+table.甲子键 th {
+
+    .地支.中文,
+    .天干.中文 {
+        display: block;
+    }
+
+    .地支.英文,
+    .天干.拼音 {
+        font-size: 60%;
+        position : relative;
+    }
+}
+
+#日历页 {
+    width: 400px;
+
+    >tbody>tr:nth-of-type(2) td {
+        width: 200px;
+    }
+}
+
+#奇门遁甲 {
+    table.奇门遁甲.八字 {
+        border         : 1px solid lightgray;
+        border-collapse: collapse;
+
+        button {
+            height: 10em;
+            width : 5em;
+        }
+    }
+
+    .imstudent {
+        float: right;
+    }
+
+    .格局.首 {
+        display     : inline-block;
+        margin-left : 5px;
+        margin-right: 5px;
+
+        &.天辅时 {
+            color: var(--吉);
+        }
+    }
+
+    table.奇门遁甲盘首.细节 {
+        border         : 1px solid lightgray;
+        border-collapse: collapse;
+
+        tr,
+        td {
+            border         : 1px solid lightgray;
+            border-collapse: collapse;
+        }
+
+        .命button {
+            min-width   : 4.5em;
+            /* maxHeight: "2em",  */
+            min-width   : 4em;
+            width       : 8em;
+        }
+
+        .命button,
+        .盘button {
+            min-height: 3em;
+        }
+
+        .盘button {
+            min-width: 4.5em;
+            max-width: 4.5em;
+        }
+    }
+
+    .奇门遁甲盘首.细节 tr td td {
+        border         : unset;
+        border-collapse: collapse;
+    }
+
+    table {
+        &.奇门遁甲盘首.细节 div {
+            display: inline-block;
+        }
+
+        &.奇门遁甲 {
+            &.八字 {
+
+                .英文,
+                .拼音 {
+                    font-size: 60%;
+                    position : relative;
+                    top      : -0.3em;
+                }
+            }
+
+            &.旬 {
+
+                .拼音,
+                .英文 {
+                    font-size: 60%;
+                    position : relative;
+                    top      : -0.3em;
+                }
+            }
+        }
+
+        &.centertable.奇门遁甲.旬 {
+            margin   : -4px 0px -8px 0;
+            font-size: 1em;
+        }
+
+        &.奇门遁甲.八字 table.八字.干支 {
+            margin: auto;
+        }
+
+        &.centertable.奇门遁甲.旬 td {
+            vertical-align: unset;
+        }
+    }
+
+    th {
+
+        &.年盘,
+        &.月盘,
+        &.日盘,
+        &.时盘,
+        &.刻盘 {
+            border-bottom: 1px solid lightgray;
+            border-right : 1px solid lightgray;
+        }
+    }
+
+    td {
+
+        &.年盘,
+        &.月盘,
+        &.日盘,
+        &.时盘 {
+            border-right: 1px solid lightgray;
+        }
+    }
+
+    th.刻盘 {
+        border-right: 1px solid lightgray;
+    }
+
+    div.空亡.地支.中文 {
+        font-size: 100%;
+    }
+
+    td {
+
+        &.年盘 .中文,
+        &.月盘 .中文,
+        &.日盘 .中文,
+        &.时盘 .中文,
+        &.刻盘 .中文 {
+            font-size  : 150%;
+            font-family: 'YaHei';
+            font-weight: bold;
+            display    : block;
+
+            /* margin-bottom: -.5em; */
+        }
+    }
+
+    .值符星,
+    .值使门,
+    .旬首宫,
+    .时干宫 {
+        font-family: 'YaHei';
+        display    : inline-flex;
+    }
+
+    td {
+
+        &.年盘 .中文.空亡,
+        &.月盘 .中文.空亡,
+        &.日盘 .中文.空亡,
+        &.时盘 .中文.空亡,
+        &.刻盘 .中文.空亡 {
+            display: block;
+
+            /* margin-bottom: -.5em; */
+        }
+    }
+
+    table.仪空 .中文 {
+        display: block;
+
+        /* margin-bottom: -.5em; */
+    }
+
+    .天盘 .暗干.中文,
+    .地盘 .暗干.中文 {
+        font-size    : 1em;
+        display      : block;
+        margin-bottom: -.4em;
+    }
+
+    .icon {
+        &.是命 {
+            position: relative;
+            left    : -4px;
+            top     : 0px;
+            display : inline-block;
+
+            img {
+                height: .7em;
+            }
+        }
+
+        &.是时 {
+            +.icon.是日 {
+                left: -16px;
+                top : 8px;
+            }
+
+            position: relative;
+            left    : -4px;
+            top     : -5px;
+            display : inline-block;
+        }
+
+        &.是日 {
+            position: relative;
+            left    : -4px;
+            top     : -5px;
+            display : inline-block;
+        }
+    }
+
+    table.仪空 {
+        display: inline;
+
+        .中文 {
+            font-family: 'YaHei';
+            font-weight: bold;
+            font-size  : 150%;
+            display    : block;
+        }
+    }
+}
+
+/* #奇门遁甲 table.奇门遁甲盘首.细节 button {
+    width: 8em;
+} */
+
+/* #奇门遁甲 table.奇门遁甲盘首 button {
+    width: 4em;
+} */
+
+/* #奇门遁甲 td .旬.中文,
+#奇门遁甲 td .仪空.中文 {
+    font-size          : 1em;
+    font-family        : 'YaHei';
+    display            : inline;
+} */
+
+/* #奇门遁甲 .天盘 .中文,
+#奇门遁甲 .地盘 .中文 {
+    margin-bottom: -.4em;
+} */
+
+/* .旬.中文, */
+
+div.奇门遁甲宫 {
+    table.奇门遁甲盘宫 {
+        /* background-color: white; */
+        color: var(--字);
+
+        /* opacity: .9; */
+
+        border-collapse: collapse;
+
+        /* border         : 20px solid var(--outter); */
+    }
+
+    td.奇门遁甲盘宫,
+    th.奇门遁甲盘宫 {
+        border-collapse: collapse;
+        border         : var(--lineWidth) solid var(--line);
+    }
+
+    table {
+
+        &.八门,
+        &.地盘 {
+            margin: auto auto -20px auto;
+        }
+
+        &.九星,
+        &.九神,
+        &.天盘 {
+            margin: auto;
+        }
+    }
+
+    td.奇门遁甲盘宫 {
+
+        &.坎宫,
+        &.坤宫,
+        &.震宫,
+        &.巽宫,
+        &.乾宫,
+        &.兑宫,
+        &.艮宫,
+        &.离宫 {
+            .盘 {
+                display: none;
+            }
+        }
+
+        &.坎宫,
+        &.坤宫,
+        &.震宫,
+        &.巽宫,
+        &.中宫,
+        &.乾宫,
+        &.兑宫,
+        &.艮宫,
+        &.离宫 {
+            position   : relative;
+            text-align : center;
+            line-height: 1.2em;
+            font-size  : 1.2em;
+            width      : 11em;
+
+            /* height: 12em; */
+            table {
+                td {
+                    width: 36%;
+                }
+
+                tr {
+                    height: 2em;
+                }
+
+                tr+tr+tr {
+                    /* width : 36%; */
+                    height: unset;
+                }
+
+                tr+tr+tr+tr {
+                    /* width : 36%; */
+                    height: 2em;
+                }
+            }
+        }
+    }
+
+    #qmdj_table {
+        width : fit-content;
+        height: fit-content;
+    }
+
+    td.奇门遁甲盘宫 {
+        >table {
+            height : 100%;
+            width  : 100%;
+            padding: 5px 0 0 0;
+        }
+    }
+
+    td.格局 {
+        font-family: 'YaHei';
+        width      : 1em;
+    }
+
+    .克应,
+    .四害 {
+        font-family: 'YaHei';
+        width      : 1em;
+
+        /* font-weight: bold; */
+    }
+
+    table.格局.十干克应 {
+        float : right;
+        height: 5em;
+    }
+
+    .格局.十干克应,
+    .季 {
+        color      : black;
+        font-size  : .5em;
+        line-height: 1.2em;
+        padding    : 7px 0 0 0;
+    }
+
+    .地亲,
+    .天亲 {
+        font-size: 120%;
+        color    : black;
+    }
+
+    div.盘 {
+        position: absolute;
+
+        /* bottom     : 20px;
+    right         : 0; */
+        font-family: 'YaHei';
+        font-weight: bold;
+        color      : var(--吉);
+        float      : right;
+        font-size  : 3em;
+
+        /* color         : rgb(105, 105, 105); */
+        top : 50%;
+        left: 40%;
+    }
+
+    .暗干.地盘.英文,
+    .天盘 .拼音,
+    .地盘 .拼音,
+    .九星 .英文,
+    .九神 .英文,
+    .八门 .英文 {
+        font-size: 60%;
+        display  : block;
+    }
+
+    .天盘 .中文,
+    .地盘 .中文,
+    .九星 .中文,
+    .九神 .中文,
+    .八门 .中文 {
+        font-family: 'YaHei';
+        font-size  : 1.5em;
+        display    : inline-flex;
+        width      : 1em;
+    }
+
+    .天乙.icon,
+    .太乙.icon {
+        display: inline-block;
+    }
+}
+
+/* table.年命 thead tr {
+    display: block;
+} */
+
+/* table.年命 th,
+table.td {
+    width: 100px;
+} */
+
+/* table.年命 tbody {
+    display : block;
+    height  : 400px;
+    overflow: auto;
+} */
+
+/*#qmdj_table table,
+#qmdj_table td,
+#qmdj_table th {
+    border-collapse: collapse;
+    border: 1px solid black;
+}*/
+
+/* div.奇门遁甲宫 td.天盘,
+div.奇门遁甲宫 td.地盘,
+div.奇门遁甲宫 td.九神,
+div.奇门遁甲宫 td.九星,
+div.奇门遁甲宫 td.八门 {
+    min-height: 1em;
+
+    position  : relative;
+    text-align: center;
+} */
+
+/* 飞星 middle tr height*/
+/* div.奇门遁甲宫 td.奇门遁甲盘宫.宫 table tbody tr:nth-of-type(2) {
+    height: 3em;
+} */
+
+/* div.奇门遁甲宫 td.奇门遁甲盘宫.中宫.宫 table tbody tr:nth-of-type(2) {
+    height: 3em;
+} */
+
+/* 
+td.奇门遁甲盘宫.坎宫 {
+    background-color: var(--水bg)
+}
+
+td.奇门遁甲盘宫.震宫,
+td.奇门遁甲盘宫.巽宫 {
+    background-color: var(--木bg)
+} 
+
+td.奇门遁甲盘宫.中宫,
+td.奇门遁甲盘宫.坤宫,
+td.奇门遁甲盘宫.艮宫 {
+    background-color: var(--土bg)
+}
+
+td.奇门遁甲盘宫.兑宫,
+td.奇门遁甲盘宫.乾宫 {
+    background-color: var(--金bg)
+}
+
+td.奇门遁甲盘宫.离宫 {
+    background-color: var(--火bg)
+} */
+
+/* div.奇门遁甲宫 td.奇门遁甲盘宫.中宫.宫 td {
+    text-align: left;
+} */
+
+/* div.奇门遁甲宫 table.寄天  {
+    font-size: 70%;
+    line-height: 1em;
+} */
+
+.天乙icon,
+.太乙icon {
+    width         : .7em;
+    vertical-align: top;
+}
+
+div.奇门遁甲宫 {
+    .马icon {
+        width : 1em;
+        height: 1em;
+    }
+
+    table.天盘.寄天 {
+        margin: 0 0 0 -10px;
+    }
+
+    .六十四卦 {
+        font-size  : 1em;
+        line-height: 1em;
+
+        color      : black;
+        font-family: 'YaHei';
+
+        &.名 {
+            font-size: .5em;
+        }
+
+        div {
+            display: inline-block;
+        }
+
+        &.天干,
+        &.地支 {
+            font-size     : .5em;
+            line-height   : 1.5em;
+            position      : relative;
+            top           : 0px;
+            vertical-align: middle;
+        }
+
+        &.五行 {
+
+            &.地支,
+            &.天干 {
+                font-size  : .5em;
+                line-height: 1.5em;
+
+                vertical-align: middle;
+            }
+        }
+
+        &.名 {
+            vertical-align: top;
+        }
+    }
+
+    table.奇格 td {
+        max-width: 10em;
+    }
+
+    div {
+
+        &.奇格,
+        &.四害 {
+            font-family: 'YaHei';
+            display    : inline-block;
+
+            /* font-weight: bold; */
+            width      : 1em;
+            font-size  : .5em;
+            line-height: 1.2em;
+        }
+
+        &.奇格:not(:first-of-type):not(:last-child) {
+            margin-left : 5px;
+            margin-right: 5px;
+        }
+    }
+
+    .下下,
+    .大凶,
+    .中凶,
+    .小凶,
+    .中下 {
+        color: var(--大凶);
+    }
+
+    .格局.十干克应 {
+
+        &.凶,
+        &.刑 {
+            color: var(--大凶);
+        }
+    }
+
+    .奇格 {
+
+        &.三奇入墓,
+        &.天乙飞宫,
+        &.天乙伏宫,
+        &.六仪击刑,
+        &.三奇受制,
+        &.天网四张,
+        &.时干入墓,
+        &.星门入墓,
+        &.时干墓,
+        &.飞干格,
+        &.伏干格,
+        &.星伏吟,
+        &.门伏吟,
+        &.星反吟,
+        &.门反吟,
+        &.门迫,
+        &.宫迫,
+        &.击刑,
+        &.入墓,
+        &.岁格,
+        &.月格,
+        &.日格,
+        &.时格,
+        &.伏勃,
+        &.飞勃,
+        &.悖格,
+        &.天网华盖,
+        &.使入地牢,
+        &.天庭地户,
+        &.太白刑门,
+        &.地户蔽门,
+        &.乙奇入墓,
+        &.丙奇入墓,
+        &.丁奇入墓,
+        &.戊入墓,
+        &.己入墓,
+        &.庚入墓,
+        &.辛入墓,
+        &.壬入墓,
+        &.癸入墓,
+        &.戊击刑,
+        &.己击刑,
+        &.庚击刑,
+        &.辛击刑,
+        &.壬击刑,
+        &.癸击刑 {
+            color: var(--大凶);
+        }
+    }
+
+    .四害 {
+        color: var(--大凶);
+    }
+
+    .中平,
+    .中中,
+    .平平 {
+        color: var(--平);
+    }
+
+    .格局.十干克应 {
+
+        &.平,
+        &.门,
+        &.刑 {
+            color: var(--平);
+        }
+    }
+
+    .中上,
+    .小吉,
+    .下吉,
+    .中吉,
+    .上吉,
+    .大吉,
+    .上上 {
+        color: var(--吉);
+    }
+
+    .格局.十干克应 {
+
+        &.吉,
+        &.静吉,
+        &.动吉 {
+            color: var(--吉);
+        }
+    }
+
+    .奇格 {
+
+        &.三奇得使,
+        &.奇游禄位,
+        &.三奇贵人,
+        &.天运昌气,
+        &.奇仪相合,
+        &.天辅时,
+        &.欢怡,
+        &.交泰,
+        &.相佐,
+        &.月拱福户,
+        &.日照当门,
+        &.玉女守门,
+        &.天遁,
+        &.风遁,
+        &.地遁,
+        &.云遁,
+        &.神遁,
+        &.鬼遁,
+        &.龙遁,
+        &.人遁,
+        &.虎遁,
+        &.真诈,
+        &.重诈,
+        &.休诈,
+        &.天假,
+        &.地假,
+        &.物假,
+        &.鬼假,
+        &.人假,
+        &.神假 {
+            color: var(--吉);
+        }
+    }
+
+    div {
+        &.先天.卦 {
+            font-size  : 3em;
+            font-family: 'YaHei';
+        }
+
+        &.后天 {
+
+            &.卦,
+            &.卦象 {
+                font-size  : 3em;
+                font-family: 'YaHei';
+            }
+        }
+
+        &.先天.卦象 {
+            font-size  : 3em;
+            font-family: 'YaHei';
+        }
+
+        &.飞星 {
+            font-size: 2em;
+
+            /* top            : 40%;
+      left              : 40%; */
+            /* width          : 45%; */
+            /* opacity        : .7; */
+            position   : unset;
+            user-select: none;
+            color      : dimgrey;
+        }
+    }
+
+    .先天.卦 {
+        font-size  : 3em;
+        font-weight: bold;
+        color      : rgb(105, 105, 105);
+        position   : absolute;
+        top        : 35%;
+        left       : 32%;
+
+        /* margin     : 30px 0 0 -47px; */
+        opacity: .2;
+    }
+
+    .后天 {
+
+        &.卦,
+        &.卦象 {
+            font-size  : 3em;
+            font-weight: bold;
+            color      : rgb(105, 105, 105);
+            position   : absolute;
+            top        : 35%;
+            left       : 32%;
+
+            /* margin     : 30px 0 0 -47px; */
+            opacity: .2;
+        }
+    }
+
+    .先天.卦象,
+    .后先.卦,
+    .先后.卦 {
+        font-size  : 3em;
+        font-weight: bold;
+        color      : rgb(105, 105, 105);
+        position   : absolute;
+        top        : 33%;
+        left       : 37%;
+
+        /* margin     : 30px 0 0 -47px; */
+        opacity: .2;
+    }
+}
+
+/* div.奇门遁甲宫 .六十四卦.星卦 {
+    position: relative;
+    top     : .5em;
+}
+
+div.奇门遁甲宫 .六十四卦.门卦 {
+    position: relative;
+    top     : -.5em;
+} */
+
+/* div.奇门遁甲宫 div.后先.卦,
+div.奇门遁甲宫 div.先后.卦 {
+    font-size  : 2em;
+    user-select: none;
+} */
+
+/* 
+#奇门遁甲 .木 {
+    color: var(--木)
+}
+
+#奇门遁甲 .火 {
+    color: var(--火)
+}
+
+#奇门遁甲 .土 {
+    color: var(--土)
+}
+
+#奇门遁甲 .金 {
+    color: var(--金)
+}
+
+
+#奇门遁甲 .水 {
+    color: var(--水)
+}
+ */
+
+/* 
+
+
+td.奇门遁甲盘宫.坎宫:after,
+td.奇门遁甲盘宫.坤宫:after,
+td.奇门遁甲盘宫.震宫:after,
+td.奇门遁甲盘宫.巽宫:after,
+td.奇门遁甲盘宫.中宫:after,
+td.奇门遁甲盘宫.乾宫:after,
+td.奇门遁甲盘宫.兑宫:after,
+td.奇门遁甲盘宫.艮宫:after,
+td.奇门遁甲盘宫.离宫:after {
+    content      : '';
+    display      : block;
+    margin-top: 100%;
+}
+
+td.奇门遁甲盘宫.坎宫.content,
+td.奇门遁甲盘宫.坤宫.content,
+td.奇门遁甲盘宫.震宫.content,
+td.奇门遁甲盘宫.巽宫.content,
+td.奇门遁甲盘宫.中宫.content,
+td.奇门遁甲盘宫.乾宫.content,
+td.奇门遁甲盘宫.兑宫.content,
+td.奇门遁甲盘宫.艮宫.content,
+td.奇门遁甲盘宫.离宫.content {
+    position  : absolute;
+    top       : 0;
+    bottom    : 0;
+    left      : 0;
+    right     : 0;
+    background: gold;
+}
+
+*/
+/* #奇门遁甲 .马 {
+    line-height: 0;
+} */
+
+/*table.宫格,
+td.宫格,
+th.宫格 {
+    border: 1px solid;
+}*/
+
+.奇门遁甲宫 {
+    transform: scale(1) translate(0px, 0px);
+}
+
+div {
+    &.奇门遁甲宫 {
+
+        .巳宫,
+        .午宫,
+        .未宫,
+        .丑宫,
+        .子宫,
+        .亥宫 {
+            text-align: center;
+            padding   : 3px 0 3px 0;
+        }
+
+        .巳宫 div,
+        .午宫 div,
+        .未宫 div,
+        .丑宫 div,
+        .子宫 div,
+        .亥宫 div {
+            display     : inline-flex;
+            margin-right: 5px;
+        }
+
+        .寅宫 div,
+        .卯宫 div,
+        .辰宫 div,
+        .申宫 div,
+        .酉宫 div,
+        .戌宫 div {
+            text-align: center;
+
+            /* display   : inline-flex; */
+            width: 1.5em;
+        }
+
+        .寅宫,
+        .卯宫,
+        .辰宫 {
+            padding: 0 3px 0 3px;
+            width  : 2.5em;
+        }
+
+        td {
+
+            &.申宫,
+            &.酉宫,
+            &.戌宫 {
+                padding: 0 3px 0 3px;
+                width  : 2.5em;
+            }
+        }
+    }
+
+    &.方向 {
+        /* width      : 5em; */
+        font-weight: bold;
+    }
+
+    &.奇门遁甲宫 {
+        td {
+
+            &.内盘.空>div>div.空,
+            &.外盘.空>div>div.空 {
+                padding-right: 2px;
+                padding-left : 2px;
+
+                /* border    : 1px solid var(--空); */
+            }
+
+        }
+
+        td.空 div.空.字 {
+            border: 1px solid var(--空);
+            color : red;
+        }
+
+        .仪空.label {
+            color: black;
+        }
+    }
+}
+
+/* div.奇门遁甲宫 td.寅宫 div.寅宫,
+div.奇门遁甲宫 td.卯宫 div.卯宫,
+div.奇门遁甲宫 td.辰宫 div.辰宫,
+div.奇门遁甲宫 td.申宫 div.申宫,
+div.奇门遁甲宫 td.酉宫 div.酉宫,
+div.奇门遁甲宫 td.戌宫 div.戌宫 {
+    writing-mode    : vertical-rl;
+    text-orientation: upright;
+} */
+
+/* div.奇门遁甲宫 td.寅宫,
+div.奇门遁甲宫 td.卯宫,
+div.奇门遁甲宫 td.辰宫,
+div.奇门遁甲宫 td.申宫,
+div.奇门遁甲宫 td.酉宫,
+div.奇门遁甲宫 td.戌宫 {
+    width: 1em;
+} */
+
+/* .年盘,
+.月盘,
+.日盘,
+.时盘,
+.刻盘 {
+    border-left : 1px solid lightgray;
+    border-top  : 1px solid lightgray;
+    border-right: 1px solid lightgray;
+} */
+
+/* div.奇门遁甲宫 td.奇格 {
+    width: 1em
+} */
+
+.中选 {
+    background-color: #d0d0fb;
+
+    /* !important; */
+    font-weight: bold;
+}
+
+td.奇门遁甲盘宫 {
+    &.外盘 {
+        background-color: var(--外盘);
+
+        /* font-size       : 1.2em; */
+    }
+
+    &.内盘 {
+        background-color: var(--内盘);
+
+        /* font-size       : 1.2em; */
+        color: var(--内盘字);
+
+        /*  #d5d5d5; */
+    }
+}
+
+div.季旺衰 {
+
+    &.旺,
+    &.相 {
+        color: var(--大吉);
+    }
+
+    &.胎,
+    &.休,
+    &.没 {
+        color: var(--小吉);
+    }
+
+    &.死,
+    &.囚,
+    &.废 {
+        color: var(--大凶);
+    }
+}
+
+td.奇门遁甲盘宫.宫 {
+    &.外盘 {
+        background-color: var(--外盘宫);
+    }
+
+    &.内盘 {
+        background-color: var(--内盘宫);
+    }
+}
+
+td1 {
+    border: 1px solid #222;
+}
+
+#奇门遁甲 {
+    .MuiButton-outlinedSizeSmall {
+        padding: 0;
+    }
+
+    .MuiBadge-anchorOriginBottomRightRectangle {
+        transform: scale(0.6) translate(10px, 10px);
+    }
+
+    .MuiIcon-root {
+        font-size: 1.3em;
+    }
+}
+
+/*.backslash1 span {
+    position: relative;
+    z-index: 2;
+}*/
+
+.backslash,
+.backslash内内,
+.backslash内外,
+.backslash外内,
+.backslash外外,
+.slash,
+.slash内内,
+.slash内外,
+.slash外内,
+.slash外外 {
+    position: relative;
+
+    /*width           : 20px;
+  height            : 10px;*/
+    text-align: center;
+}
+
+.backslash:before,
+.backslash内内:before,
+.backslash内外:before,
+.backslash外内:before,
+.backslash外外:before,
+.backslash:after,
+.backslash内内:after,
+.backslash内外:after,
+.backslash外内:after,
+.backslash外外:after,
+.slash内内:after,
+.slash内外:after,
+.slash外内:after,
+.slash外外:after {
+    content : '';
+    position: absolute;
+    left    : 0;
+    top     : 0;
+    right   : 0;
+    bottom  : 0;
+    z-index : 1;
+}
+
+/*.slash:before,*/
+
+.backslash:before {
+    background: linear-gradient(to top right, var(--外盘) calc(50% - var(--lineWidth)), var(--line) 50%, var(--外盘) calc(50% + var(--lineWidth)));
+}
+
+.backslash内内:before {
+    background: linear-gradient(to top right, var(--内盘) calc(50% - var(--lineWidth)), var(--line) 50%, var(--内盘) calc(50% + var(--lineWidth)));
+}
+
+.backslash内外:before {
+    background: linear-gradient(to top right, var(--内盘) calc(50% - var(--lineWidth)), var(--line) 50%, var(--外盘) calc(50% + var(--lineWidth)));
+}
+
+.backslash外内:before {
+    background: linear-gradient(to top right, var(--外盘) calc(50% - var(--lineWidth)), var(--line) 50%, var(--内盘) calc(50% + var(--lineWidth)));
+}
+
+.backslash外外:before {
+    background: linear-gradient(to top right, var(--外盘) calc(50% - var(--lineWidth)), var(--line) 50%, var(--外盘) calc(50% + var(--lineWidth)));
+}
+
+/*.backslash1:after {
+    background: linear-gradient(to left top, transparent calc(50% - 1px), var(--line) 50%, transparent calc(50% + 1px) );
+}
+
+.slash1:before {
+    background: linear-gradient(to top right, transparent calc(50% - 1px), var(--line) 50%, transparent calc(50% + 1px) );
+}*/
+
+.slash:after {
+    background: linear-gradient(to left top, var(--外盘) calc(50% - 1px), var(--line) 50%, var(--外盘) calc(50% + var(--lineWidth)));
+}
+
+.slash内内:after {
+    background: linear-gradient(to left top, var(--内盘) calc(50% - 1px), var(--line) 50%, var(--内盘) calc(50% + var(--lineWidth)));
+}
+
+.slash内外:after {
+    background: linear-gradient(to left top, var(--内盘) calc(50% - 1px), var(--line) 50%, var(--外盘) calc(50% + var(--lineWidth)));
+}
+
+.slash外内:after {
+    background: linear-gradient(to left top, var(--外盘) calc(50% - 1px), var(--line) 50%, var(--内盘) calc(50% + var(--lineWidth)));
+}
+
+.slash外外:after {
+    background: linear-gradient(to left top, var(--外盘) calc(50% - 1px), var(--line) 50%, var(--外盘) calc(50% + var(--lineWidth)));
+}

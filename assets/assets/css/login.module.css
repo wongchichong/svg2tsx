@@ -1,0 +1,202 @@
+@charset "UTF-8";
+div.login.button {
+  padding: 5px;
+}
+div.login.dialog {
+  width: 21em;
+}
+
+.login.button {
+  width: 20em;
+  text-transform: unset;
+  text-align: left;
+  justify-content: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.login.button img {
+  vertical-align: top;
+}
+
+span.link.account.google {
+  background-color: #d3d3d3;
+  text-transform: none;
+}
+span.link.account.facebook {
+  /* background-color: #3b5998; */
+  color: #ffffff;
+  text-transform: none;
+}
+span.link.account.yahoo {
+  /* background-color: #720e98; */
+  color: #ffffff;
+  text-transform: none;
+}
+span.link.account.microsoft {
+  /* background-color: #2F2F2F; */
+  color: #ffffff;
+  text-transform: none;
+}
+span.link.account.phone {
+  /* background-color: #02bd7e; */
+  color: #ffffff;
+  text-transform: none;
+}
+span.link.account.email {
+  /* background-color: #db4437; */
+  color: #ffffff;
+  text-transform: none;
+}
+span.link.account.twitter {
+  /* background-color: #55acee; */
+  color: #ffffff;
+  text-transform: none;
+}
+span.link.account.github {
+  /* background-color: #333333; */
+  color: #ffffff;
+  text-transform: none;
+}
+span.link.account.apple {
+  /* background-color: #000000; */
+  color: #ffffff;
+  text-transform: none;
+}
+span.link.account.anonymous {
+  /* background-color: #f4b400; */
+  color: #ffffff;
+  text-transform: none;
+}
+span.link.account.telegram {
+  /* background-color: #55acee; */
+  color: #ffffff;
+  text-transform: none;
+}
+
+/* delete account button */
+.delete.account.button.google,
+button.login.button.google {
+  background-color: #d3d3d3;
+}
+
+.delete.account.button.facebook,
+button.login.button.facebook {
+  background-color: #3b5998;
+  color: #ffffff;
+}
+
+.delete.account.button.yahoo,
+button.login.button.yahoo {
+  background-color: #720e98;
+  color: #ffffff;
+}
+
+.delete.account.button.microsoft,
+button.login.button.microsoft {
+  background-color: #2F2F2F;
+  color: #ffffff;
+}
+
+.delete.account.button.phone,
+button.login.button.phone {
+  background-color: #02bd7e;
+  color: #ffffff;
+}
+
+.delete.account.button.email,
+button.login.button.email {
+  background-color: #db4437;
+  color: #ffffff;
+}
+
+.delete.account.button.twitter,
+button.login.button.twitter {
+  background-color: #55acee;
+  color: #ffffff;
+}
+
+.delete.account.button.github,
+button.login.button.github {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.delete.account.button.apple,
+button.login.button.apple {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.delete.account.button.anonymous,
+button.login.button.anonymous {
+  background-color: #f4b400;
+  color: #ffffff;
+}
+
+.delete.account.button.telgeram,
+button.login.button.telegram,
+.telegram.link.button {
+  background-color: #55acee;
+  color: #ffffff;
+}
+
+#phone {
+  /* empty */
+}
+
+.email.new {
+  font-size: 0.8em;
+  text-transform: none;
+  height: 2em;
+}
+
+.phone.login.sms {
+  font-size: 0.8em;
+  text-transform: none;
+  height: 2em;
+}
+
+.phone.login.sms {
+  float: right;
+}
+
+.input.form {
+  margin: 2px;
+  width: 16em;
+}
+
+div.login.button.phone div, div.login.button.email div {
+  margin-bottom: 5px;
+}
+
+.姓名.域 {
+  width: 23em;
+}
+
+/* 
+.性.button {
+    height: 4em;
+}
+
+.性.button span {
+    height: 2em;
+} */
+.more {
+  float: right;
+  text-decoration: underline;
+  color: blue;
+}
+
+.center {
+  text-align: center;
+}
+
+.provider {
+  /* empty */
+}
+
+.icon {
+  /* icon */
+}
+
+/*# sourceMappingURL=login.module.css.map */

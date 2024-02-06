@@ -1,0 +1,39 @@
+{
+    "name": "svg2tsx",
+    "description": "",
+    "version": "1.0.1",
+    "author": "",
+    "license": "MIT",
+    "repository": "",
+    "keywords": [],
+    "bin": "./cli/index.js",
+    "publishConfig": {
+        "registry": "https://registry.npmjs.org/"
+    },
+    "scripts": {
+        "release": "git add . && git commit -m \"Bump version\" git push && pnpm version patch",
+        "preinstall": "npx only-allow pnpm",
+        "web": "vite --force --mode dev --host",
+        "build": "vite build --config vite.config.ts",
+        "watch": "tsc --watch --project tsconfig.build.json",
+        "test": "node --watch ./cli/index.js",
+        "clean": "rimraf dist cli public build",
+        "build:all": "pnpm clean && pnpm build && pnpm build:cli && pnpm build:lib"
+    },
+    "files": [
+        "headless",
+        "dist",
+        "src"
+    ],
+    "devDependencies": {
+        "glob": "^10.3.10",
+        "vite": "^4.4.11",
+        "yargs": "^17.7.2"
+    },
+    "dependencies": {
+        "svgo": "^3.0.2"
+    },
+    "peerDependencies": {
+        "woby": "workspace:^"
+    }
+}

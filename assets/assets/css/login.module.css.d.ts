@@ -1,0 +1,32 @@
+declare const styles: {
+  readonly "login": string;
+  readonly "button": string;
+  readonly "dialog": string;
+  readonly "link": string;
+  readonly "account": string;
+  readonly "google": string;
+  readonly "facebook": string;
+  readonly "yahoo": string;
+  readonly "microsoft": string;
+  readonly "phone": string;
+  readonly "email": string;
+  readonly "twitter": string;
+  readonly "github": string;
+  readonly "apple": string;
+  readonly "anonymous": string;
+  readonly "telegram": string;
+  readonly "delete": string;
+  readonly "telgeram": string;
+  readonly "new": string;
+  readonly "sms": string;
+  readonly "input": string;
+  readonly "form": string;
+  readonly "姓名": string;
+  readonly "域": string;
+  readonly "more": string;
+  readonly "center": string;
+  readonly "provider": string;
+  readonly "icon": string;
+};
+export = styles;
+

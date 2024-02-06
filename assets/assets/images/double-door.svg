@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:cc="http://creativecommons.org/ns#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 511.99899 512" xml:space="preserve" sodipodi:docname="double-door.svg" width="511.99899" height="512" inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+    <metadata id="metadata79">
+        <rdf:RDF>
+            <cc:Work rdf:about="">
+                <dc:format>image/svg+xml</dc:format>
+                <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                <dc:title></dc:title>
+            </cc:Work>
+        </rdf:RDF>
+    </metadata>
+    <defs id="defs77" />
+    <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-width="707" inkscape:window-height="480" id="namedview75" showgrid="false" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:zoom="0.4609375" inkscape:cx="256" inkscape:cy="256" inkscape:window-x="700" inkscape:window-y="41" inkscape:window-maximized="0" inkscape:current-layer="Capa_1" />
+    <g id="g4" style="fill:#000000;stroke:none">
+        <path d="M 503.467,494.933 H 8.533 C 3.814,494.933 0,498.756 0,503.466 0,508.176 3.814,512 8.533,512 h 494.933 c 4.719,0 8.533,-3.823 8.533,-8.533 0,-4.71 -3.813,-8.534 -8.532,-8.534 z" id="path2" inkscape:connector-curvature="0" />
+    </g>
+    <g id="g10" style="fill:#000000;stroke:none">
+        <path d="M 256,0 H 34.133 C 29.414,0 25.6,3.823 25.6,8.533 v 494.933 c 0,4.71 3.814,8.533 8.533,8.533 H 256 c 4.719,0 8.533,-3.823 8.533,-8.533 V 8.533 C 264.533,3.823 260.719,0 256,0 Z m -8.533,494.933 H 42.667 V 17.067 h 204.8 z" id="path8" inkscape:connector-curvature="0" />
+    </g>
+    <g id="g16" style="fill:#000000;stroke:none">
+        <path d="m 221.867,34.133 h -153.6 c -4.719,0 -8.533,3.823 -8.533,8.533 v 460.8 c 0,4.71 3.814,8.533 8.533,8.533 h 153.6 c 4.719,0 8.533,-3.823 8.533,-8.533 v -460.8 c 0,-4.71 -3.814,-8.533 -8.533,-8.533 z m -8.534,460.8 H 76.8 V 51.2 h 136.533 z" id="path14" inkscape:connector-curvature="0" />
+    </g>
+    <g id="g22" style="fill:#000000;stroke:none">
+        <path d="M 477.867,0 H 256 c -4.719,0 -8.533,3.823 -8.533,8.533 v 494.933 c 0,4.71 3.814,8.533 8.533,8.533 h 221.867 c 4.719,0 8.533,-3.823 8.533,-8.533 V 8.533 C 486.4,3.823 482.586,0 477.867,0 Z m -8.534,494.933 h -204.8 V 17.067 h 204.8 z" id="path20" inkscape:connector-curvature="0" />
+    </g>
+    <g id="g28" style="fill:#000000;stroke:none">
+        <path d="m 443.733,34.133 h -153.6 c -4.719,0 -8.533,3.823 -8.533,8.533 v 460.8 c 0,4.71 3.814,8.533 8.533,8.533 h 153.6 c 4.719,0 8.533,-3.823 8.533,-8.533 v -460.8 c 10e-4,-4.71 -3.814,-8.533 -8.533,-8.533 z m -8.533,460.8 H 298.667 V 51.2 H 435.2 Z" id="path26" inkscape:connector-curvature="0" />
+    </g>
+    <g id="g34" style="fill:#000000;stroke:none">
+        <path d="m 324.267,213.333 c -4.719,0 -8.533,3.823 -8.533,8.533 v 102.4 c 0,4.71 3.814,8.533 8.533,8.533 4.719,0 8.533,-3.823 8.533,-8.533 v -102.4 c 0,-4.71 -3.814,-8.533 -8.533,-8.533 z" id="path32" inkscape:connector-curvature="0" />
+    </g>
+    <g id="g40" style="fill:#000000;stroke:none">
+        <path d="m 187.733,213.333 c -4.719,0 -8.533,3.823 -8.533,8.533 v 102.4 c 0,4.71 3.814,8.533 8.533,8.533 4.719,0 8.533,-3.823 8.533,-8.533 v -102.4 c 0.001,-4.71 -3.814,-8.533 -8.533,-8.533 z" id="path38" inkscape:connector-curvature="0" />
+    </g>
+</svg>

@@ -1,0 +1,15 @@
+.centertable {
+  margin: auto;
+  display: table;
+  text-align: center;
+}
+
+.width100 {
+  width: 100%;
+}
+
+.right {
+  text-align: right;
+}
+
+/*# sourceMappingURL=table.module.css.map */

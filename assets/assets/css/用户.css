@@ -1,0 +1,69 @@
+@charset "UTF-8";
+img.user.list.avatar {
+  width: 3em;
+  height: 3em;
+}
+
+.provider.icon {
+  width: 1em;
+  height: 1em;
+}
+
+table.用户.list {
+  border: 1px solid lightgray;
+  border-collapse: collapse;
+}
+table.用户.list tr,
+table.用户.list td {
+  border: 1px solid lightgray;
+  border-collapse: collapse;
+}
+
+.provider.icon.google {
+  /* background-color: #d3d3d3 */
+}
+.provider.icon.facebook {
+  background-color: #3b5998;
+  color: #ffffff;
+}
+.provider.icon.yahoo {
+  background-color: #720e98;
+  color: #ffffff;
+}
+.provider.icon.microsoft {
+  background-color: #2F2F2F;
+  color: #ffffff;
+}
+.provider.icon.phone {
+  background-color: #02bd7e;
+  color: #ffffff;
+}
+.provider.icon.mail {
+  background-color: #db4437;
+  color: #ffffff;
+}
+.provider.icon.twitter {
+  background-color: #55acee;
+  color: #ffffff;
+}
+.provider.icon.github {
+  background-color: #333333;
+  color: #ffffff;
+}
+.provider.icon.apple {
+  background-color: #000000;
+  color: #ffffff;
+}
+.provider.icon.anonymous {
+  background-color: #f4b400;
+  color: #ffffff;
+}
+.provider.icon.telgeram {
+  background-color: #55acee;
+  color: #ffffff;
+}
+
+.admin.page.button {
+  margin: 3px;
+  text-transform: capitalize;
+}/*# sourceMappingURL=用户.css.map */

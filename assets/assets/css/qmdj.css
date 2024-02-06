@@ -1,0 +1,1150 @@
+@charset "UTF-8";
+/* :root {
+    --background: white;
+    --outter    : #514426;
+    --内盘        : #62563a;
+    --外盘        : #a79567;
+    --内盘宫       : #FEFACB;
+    --外盘宫       : #ffffff;
+    --金bg       : #fff16e88;
+    --木bg       : #A5D6A788;
+    --水bg       : #9FA8DA88;
+    --火bg       : #EF9A9A88;
+    --土bg       : #BCAAA488;
+    --木         : #0C6F10;
+    --火         : #ab0f0f;
+    --土         : #702c14;
+    --金         : #978b09;
+    --水         : #1253bc;
+    --时         : #4CAF50;
+    --日         : #4CAF50;
+
+    --阴: #ab0f0f;
+
+    --line     : #514426;
+    --lineWidth: 4px;
+    --字        : #efd8ca;
+    --空        : #dfc8ba;
+
+    --吉: red;
+    --凶: black;
+    --平: green;
+} */
+
+/* @import url("core.css");
+
+#奇门遁甲 {
+    background-color: var(--background);
+}
+
+#奇门遁甲 .阴.局 {
+    color: var(--阴);
+} */
+/* 
+div.奇门遁甲宫 #qmdj_table {
+    width           : fit-content;
+    background      : linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(./images/logo-red-full-padding.svg) center no-repeat;
+    background-size : contain;
+    vertical-align  : middle;
+}
+
+table#qmdj_desc {
+    padding    : 10px;
+} */
+
+/* 
+table#qmdj_desc,
+table#qmdj_desc td,
+table#qmdj_desc tr {
+    border         : 1px solid darkgray;
+    border-collapse: collapse;
+}
+
+table#qmdj_desc .标 {
+    background-color: #A8A8A8;
+    text-align      : center;
+}
+
+table#qmdj_desc .副标 {
+    color           : white;
+    background-color: black;
+    font-weight     : bold;
+    text-align      : center;
+}
+
+table#qmdj_desc .副标 .格 {
+    width: 6em;
+}
+
+table#qmdj_desc .副标 .吉凶 {
+    width     : 3em;
+    text-align: center;
+}
+
+table#qmdj_desc .描述 {
+    width: 30em;
+}
+
+table#qmdj_desc .向,
+table#qmdj_desc .格,
+table#qmdj_desc .吉凶 {
+    text-align: center;
+}
+
+#qmdj_天赋 {
+    padding: 10px;
+}
+
+table.甲子键 th .地支.中文,
+table.甲子键 th .天干.中文 {
+    display: block;
+}
+
+table.甲子键 th .地支.英文,
+table.甲子键 th .天干.拼音 {
+    font-size: 60%;
+    position : relative;
+}
+
+#日历页 {
+    width: 400px;
+}
+
+#日历页>tbody>tr:nth-of-type(2) td {
+    width: 200px;
+}
+
+#奇门遁甲 table.奇门遁甲.八字 {
+    border         : 1px solid lightgray;
+    border-collapse: collapse;
+}
+
+#奇门遁甲 table.奇门遁甲.八字 button {
+    height: 10em;
+    width : 5em;
+}
+
+#奇门遁甲 .imstudent {
+    float: right;
+}
+
+#奇门遁甲 .格局.首 {
+    display     : inline-block;
+    margin-left : 5px;
+    margin-right: 5px;
+}
+
+#奇门遁甲 .格局.首.天辅时 {
+    color: var(--吉);
+}
+
+#奇门遁甲 table.奇门遁甲盘首.细节 {
+    border         : 1px solid lightgray;
+    border-collapse: collapse;
+}
+
+#奇门遁甲 table.奇门遁甲盘首.细节 tr,
+#奇门遁甲 table.奇门遁甲盘首.细节 td {
+    border         : 1px solid lightgray;
+    border-collapse: collapse;
+} */
+/* 
+#奇门遁甲 table.奇门遁甲盘首.细节 .命button {
+    min-width   : 4.5em;
+    min-width   : 4em;
+    width       : 8em;
+} */
+
+/* 
+#奇门遁甲 table.奇门遁甲盘首.细节 .命button,
+#奇门遁甲 table.奇门遁甲盘首.细节 .盘button {
+    min-height: 3em;
+}
+
+#奇门遁甲 table.奇门遁甲盘首.细节 .盘button {
+    min-width: 4.5em;
+    max-width: 4.5em;
+}
+
+#奇门遁甲 .奇门遁甲盘首.细节 tr td td {
+    border         : unset;
+    border-collapse: collapse;
+}
+
+#奇门遁甲 table.奇门遁甲盘首.细节 div {
+    display: inline-block;
+}
+
+#奇门遁甲 table.奇门遁甲.八字 .英文,
+#奇门遁甲 table.奇门遁甲.八字 .拼音 {
+    font-size: 60%;
+    position : relative;
+    top      : -0.3em;
+}
+
+#奇门遁甲 table.奇门遁甲.旬 .拼音,
+#奇门遁甲 table.奇门遁甲.旬 .英文 {
+    font-size: 60%;
+    position : relative;
+    top      : -0.3em;
+}
+
+#奇门遁甲 table.centertable.奇门遁甲.旬 {
+    margin   : -4px 0px -8px 0;
+    font-size: 1em;
+}
+
+#奇门遁甲 table.奇门遁甲.八字 table.八字.干支 {
+    margin: auto;
+}
+
+#奇门遁甲 table.centertable.奇门遁甲.旬 td {
+    vertical-align: unset;
+}
+
+#奇门遁甲 th.年盘,
+#奇门遁甲 th.月盘,
+#奇门遁甲 th.日盘,
+#奇门遁甲 th.时盘,
+#奇门遁甲 th.刻盘 {
+    border-bottom: 1px solid lightgray;
+    border-right : 1px solid lightgray;
+}
+
+#奇门遁甲 td.年盘,
+#奇门遁甲 td.月盘,
+#奇门遁甲 td.日盘,
+#奇门遁甲 td.时盘 {
+    border-right: 1px solid lightgray;
+}
+
+#奇门遁甲 th.刻盘 {
+    border-right: 1px solid lightgray;
+}
+
+#奇门遁甲 div.空亡.地支.中文 {
+    font-size: 100%;
+} */
+/* 
+#奇门遁甲 td.年盘 .中文,
+#奇门遁甲 td.月盘 .中文,
+#奇门遁甲 td.日盘 .中文,
+#奇门遁甲 td.时盘 .中文,
+#奇门遁甲 td.刻盘 .中文 {
+    font-size       : 150%;
+    font-family     : "YaHei";
+    font-weight     : bold;
+    display         : block;
+} */
+
+/* 
+#奇门遁甲 .值符星,
+#奇门遁甲 .值使门,
+#奇门遁甲 .旬首宫,
+#奇门遁甲 .时干宫 {
+    font-family: "YaHei";
+    display    : inline-flex;
+} */
+/* 
+#奇门遁甲 td.年盘 .中文.空亡,
+#奇门遁甲 td.月盘 .中文.空亡,
+#奇门遁甲 td.日盘 .中文.空亡,
+#奇门遁甲 td.时盘 .中文.空亡,
+#奇门遁甲 td.刻盘 .中文.空亡 {
+    display         : block;
+}
+
+#奇门遁甲 table.仪空 .中文 {
+    display         : block;
+}
+
+#奇门遁甲 .天盘 .暗干.中文,
+#奇门遁甲 .地盘 .暗干.中文 {
+    font-size    : 1em;
+    display      : block;
+    margin-bottom: -0.4em;
+}
+
+#奇门遁甲 .icon.是命 {
+    position: relative;
+    left    : -4px;
+    top     : 0px;
+    display : inline-block;
+}
+
+#奇门遁甲 .icon.是命 img {
+    height: 0.7em;
+}
+
+#奇门遁甲 .icon.是时 {
+    position: relative;
+    left    : -4px;
+    top     : -5px;
+    display : inline-block;
+}
+
+#奇门遁甲 .icon.是时+.icon.是日 {
+    left: -16px;
+    top : 8px;
+}
+
+#奇门遁甲 .icon.是日 {
+    position: relative;
+    left    : -4px;
+    top     : -5px;
+    display : inline-block;
+}
+
+#奇门遁甲 table.仪空 {
+    display: inline;
+}
+
+#奇门遁甲 table.仪空 .中文 {
+    font-family: "YaHei";
+    font-weight: bold;
+    font-size  : 150%;
+    display    : block;
+} */
+
+/* #奇门遁甲 table.奇门遁甲盘首.细节 button {
+    width: 8em;
+} */
+/* #奇门遁甲 table.奇门遁甲盘首 button {
+    width: 4em;
+} */
+/* #奇门遁甲 td .旬.中文,
+#奇门遁甲 td .仪空.中文 {
+    font-size          : 1em;
+    font-family        : 'YaHei';
+    display            : inline;
+} */
+/* #奇门遁甲 .天盘 .中文,
+#奇门遁甲 .地盘 .中文 {
+    margin-bottom: -.4em;
+} */
+
+/* .旬.中文, */
+/* div.奇门遁甲宫 table.奇门遁甲盘宫 {
+    color             : var(--字);
+    border-collapse   : collapse;
+}
+
+div.奇门遁甲宫 td.奇门遁甲盘宫,
+div.奇门遁甲宫 th.奇门遁甲盘宫 {
+    border-collapse: collapse;
+    border         : var(--lineWidth) solid var(--line);
+} */
+
+/* 
+div.奇门遁甲宫 table.八门,
+div.奇门遁甲宫 table.地盘 {
+    margin: auto auto -20px auto;
+}
+
+div.奇门遁甲宫 table.九星,
+div.奇门遁甲宫 table.九神,
+div.奇门遁甲宫 table.天盘 {
+    margin: auto;
+}
+
+div.奇门遁甲宫 td.奇门遁甲盘宫.坎宫 .盘,
+div.奇门遁甲宫 td.奇门遁甲盘宫.坤宫 .盘,
+div.奇门遁甲宫 td.奇门遁甲盘宫.震宫 .盘,
+div.奇门遁甲宫 td.奇门遁甲盘宫.巽宫 .盘,
+div.奇门遁甲宫 td.奇门遁甲盘宫.乾宫 .盘,
+div.奇门遁甲宫 td.奇门遁甲盘宫.兑宫 .盘,
+div.奇门遁甲宫 td.奇门遁甲盘宫.艮宫 .盘,
+div.奇门遁甲宫 td.奇门遁甲盘宫.离宫 .盘 {
+    display: none;
+}
+
+div.奇门遁甲宫 td.奇门遁甲盘宫.坎宫,
+div.奇门遁甲宫 td.奇门遁甲盘宫.坤宫,
+div.奇门遁甲宫 td.奇门遁甲盘宫.震宫,
+div.奇门遁甲宫 td.奇门遁甲盘宫.巽宫,
+div.奇门遁甲宫 td.奇门遁甲盘宫.中宫,
+div.奇门遁甲宫 td.奇门遁甲盘宫.乾宫,
+div.奇门遁甲宫 td.奇门遁甲盘宫.兑宫,
+div.奇门遁甲宫 td.奇门遁甲盘宫.艮宫,
+div.奇门遁甲宫 td.奇门遁甲盘宫.离宫 {
+    position   : relative;
+    text-align : center;
+    line-height: 1.2em;
+    font-size  : 1.2em;
+    width      : 11em;
+}
+
+div.奇门遁甲宫 td.奇门遁甲盘宫.坎宫 table td,
+div.奇门遁甲宫 td.奇门遁甲盘宫.坤宫 table td,
+div.奇门遁甲宫 td.奇门遁甲盘宫.震宫 table td,
+div.奇门遁甲宫 td.奇门遁甲盘宫.巽宫 table td,
+div.奇门遁甲宫 td.奇门遁甲盘宫.中宫 table td,
+div.奇门遁甲宫 td.奇门遁甲盘宫.乾宫 table td,
+div.奇门遁甲宫 td.奇门遁甲盘宫.兑宫 table td,
+div.奇门遁甲宫 td.奇门遁甲盘宫.艮宫 table td,
+div.奇门遁甲宫 td.奇门遁甲盘宫.离宫 table td {
+    width: 36%;
+}
+
+div.奇门遁甲宫 td.奇门遁甲盘宫.坎宫 table tr,
+div.奇门遁甲宫 td.奇门遁甲盘宫.坤宫 table tr,
+div.奇门遁甲宫 td.奇门遁甲盘宫.震宫 table tr,
+div.奇门遁甲宫 td.奇门遁甲盘宫.巽宫 table tr,
+div.奇门遁甲宫 td.奇门遁甲盘宫.中宫 table tr,
+div.奇门遁甲宫 td.奇门遁甲盘宫.乾宫 table tr,
+div.奇门遁甲宫 td.奇门遁甲盘宫.兑宫 table tr,
+div.奇门遁甲宫 td.奇门遁甲盘宫.艮宫 table tr,
+div.奇门遁甲宫 td.奇门遁甲盘宫.离宫 table tr {
+    height: 2em;
+}
+
+div.奇门遁甲宫 td.奇门遁甲盘宫.坎宫 table tr+tr+tr,
+div.奇门遁甲宫 td.奇门遁甲盘宫.坤宫 table tr+tr+tr,
+div.奇门遁甲宫 td.奇门遁甲盘宫.震宫 table tr+tr+tr,
+div.奇门遁甲宫 td.奇门遁甲盘宫.巽宫 table tr+tr+tr,
+div.奇门遁甲宫 td.奇门遁甲盘宫.中宫 table tr+tr+tr,
+div.奇门遁甲宫 td.奇门遁甲盘宫.乾宫 table tr+tr+tr,
+div.奇门遁甲宫 td.奇门遁甲盘宫.兑宫 table tr+tr+tr,
+div.奇门遁甲宫 td.奇门遁甲盘宫.艮宫 table tr+tr+tr,
+div.奇门遁甲宫 td.奇门遁甲盘宫.离宫 table tr+tr+tr {
+    height: unset;
+}
+
+div.奇门遁甲宫 td.奇门遁甲盘宫.坎宫 table tr+tr+tr+tr,
+div.奇门遁甲宫 td.奇门遁甲盘宫.坤宫 table tr+tr+tr+tr,
+div.奇门遁甲宫 td.奇门遁甲盘宫.震宫 table tr+tr+tr+tr,
+div.奇门遁甲宫 td.奇门遁甲盘宫.巽宫 table tr+tr+tr+tr,
+div.奇门遁甲宫 td.奇门遁甲盘宫.中宫 table tr+tr+tr+tr,
+div.奇门遁甲宫 td.奇门遁甲盘宫.乾宫 table tr+tr+tr+tr,
+div.奇门遁甲宫 td.奇门遁甲盘宫.兑宫 table tr+tr+tr+tr,
+div.奇门遁甲宫 td.奇门遁甲盘宫.艮宫 table tr+tr+tr+tr,
+div.奇门遁甲宫 td.奇门遁甲盘宫.离宫 table tr+tr+tr+tr {
+    height: 2em;
+}
+
+div.奇门遁甲宫 #qmdj_table {
+    width : fit-content;
+    height: fit-content;
+} 
+*/
+/* 
+div.奇门遁甲宫 td.奇门遁甲盘宫>table {
+    height : 100%;
+    width  : 100%;
+    padding: 5px 0 0 0;
+}
+
+div.奇门遁甲宫 td.格局 {
+    font-family: "YaHei";
+    width      : 1em;
+}
+
+div.奇门遁甲宫 .克应,
+div.奇门遁甲宫 .四害 {
+    font-family   : "YaHei";
+    width         : 1em;
+}
+
+div.奇门遁甲宫 table.格局.十干克应 {
+    float : right;
+    height: 5em;
+}
+
+div.奇门遁甲宫 .格局.十干克应,
+div.奇门遁甲宫 .季 {
+    color      : black;
+    font-size  : 0.5em;
+    line-height: 1.2em;
+    padding    : 7px 0 0 0;
+}
+
+div.奇门遁甲宫 .地亲,
+div.奇门遁甲宫 .天亲 {
+    font-size: 120%;
+    color    : black;
+}
+
+div.奇门遁甲宫 div.盘 {
+    position         : absolute;
+    font-family      : "YaHei";
+    font-weight      : bold;
+    color            : var(--吉);
+    float            : right;
+    font-size        : 3em;
+    top              : 50%;
+    left             : 40%;
+}
+
+div.奇门遁甲宫 .暗干.地盘.英文,
+div.奇门遁甲宫 .天盘 .拼音,
+div.奇门遁甲宫 .地盘 .拼音,
+div.奇门遁甲宫 .九星 .英文,
+div.奇门遁甲宫 .九神 .英文,
+div.奇门遁甲宫 .八门 .英文 {
+    font-size: 60%;
+    display  : block;
+}
+
+div.奇门遁甲宫 .天盘 .中文,
+div.奇门遁甲宫 .地盘 .中文,
+div.奇门遁甲宫 .九星 .中文,
+div.奇门遁甲宫 .九神 .中文,
+div.奇门遁甲宫 .八门 .中文 {
+    font-family: "YaHei";
+    font-size  : 1.5em;
+    display    : inline-flex;
+    width      : 1em;
+}
+
+div.奇门遁甲宫 .天乙.icon,
+div.奇门遁甲宫 .太乙.icon {
+    display: inline-block;
+} */
+
+/* table.年命 thead tr {
+    display: block;
+} */
+/* table.年命 th,
+table.td {
+    width: 100px;
+} */
+/* table.年命 tbody {
+    display : block;
+    height  : 400px;
+    overflow: auto;
+} */
+/*#qmdj_table table,
+#qmdj_table td,
+#qmdj_table th {
+    border-collapse: collapse;
+    border: 1px solid black;
+}*/
+/* div.奇门遁甲宫 td.天盘,
+div.奇门遁甲宫 td.地盘,
+div.奇门遁甲宫 td.九神,
+div.奇门遁甲宫 td.九星,
+div.奇门遁甲宫 td.八门 {
+    min-height: 1em;
+
+    position  : relative;
+    text-align: center;
+} */
+/* 飞星 middle tr height*/
+/* div.奇门遁甲宫 td.奇门遁甲盘宫.宫 table tbody tr:nth-of-type(2) {
+    height: 3em;
+} */
+/* div.奇门遁甲宫 td.奇门遁甲盘宫.中宫.宫 table tbody tr:nth-of-type(2) {
+    height: 3em;
+} */
+/* 
+td.奇门遁甲盘宫.坎宫 {
+    background-color: var(--水bg)
+}
+
+td.奇门遁甲盘宫.震宫,
+td.奇门遁甲盘宫.巽宫 {
+    background-color: var(--木bg)
+} 
+
+td.奇门遁甲盘宫.中宫,
+td.奇门遁甲盘宫.坤宫,
+td.奇门遁甲盘宫.艮宫 {
+    background-color: var(--土bg)
+}
+
+td.奇门遁甲盘宫.兑宫,
+td.奇门遁甲盘宫.乾宫 {
+    background-color: var(--金bg)
+}
+
+td.奇门遁甲盘宫.离宫 {
+    background-color: var(--火bg)
+} */
+/* div.奇门遁甲宫 td.奇门遁甲盘宫.中宫.宫 td {
+    text-align: left;
+} */
+/* div.奇门遁甲宫 table.寄天  {
+    font-size: 70%;
+    line-height: 1em;
+} */
+
+/* .天乙icon,
+.太乙icon {
+    width         : 0.7em;
+    vertical-align: top;
+}
+
+div.奇门遁甲宫 .马icon {
+    width : 1em;
+    height: 1em;
+}
+
+div.奇门遁甲宫 table.天盘.寄天 {
+    margin: 0 0 0 -10px;
+}
+
+div.奇门遁甲宫 .六十四卦 {
+    font-size  : 1em;
+    line-height: 1em;
+    color      : black;
+    font-family: "YaHei";
+}
+
+div.奇门遁甲宫 .六十四卦.名 {
+    font-size: 0.5em;
+}
+
+div.奇门遁甲宫 .六十四卦 div {
+    display: inline-block;
+}
+
+div.奇门遁甲宫 .六十四卦.天干,
+div.奇门遁甲宫 .六十四卦.地支 {
+    font-size     : 0.5em;
+    line-height   : 1.5em;
+    position      : relative;
+    top           : 0px;
+    vertical-align: middle;
+}
+
+div.奇门遁甲宫 .六十四卦.五行.地支,
+div.奇门遁甲宫 .六十四卦.五行.天干 {
+    font-size     : 0.5em;
+    line-height   : 1.5em;
+    vertical-align: middle;
+}
+
+div.奇门遁甲宫 .六十四卦.名 {
+    vertical-align: top;
+}
+
+div.奇门遁甲宫 table.奇格 td {
+    max-width: 10em;
+}
+
+div.奇门遁甲宫 div.奇格,
+div.奇门遁甲宫 div.四害 {
+    font-family   : "YaHei";
+    display       : inline-block;
+    width         : 1em;
+    font-size     : 0.5em;
+    line-height   : 1.2em;
+}
+
+div.奇门遁甲宫 div.奇格:not(:first-of-type):not(:last-child) {
+    margin-left : 5px;
+    margin-right: 5px;
+}
+
+div.奇门遁甲宫 .下下,
+div.奇门遁甲宫 .大凶,
+div.奇门遁甲宫 .中凶,
+div.奇门遁甲宫 .小凶,
+div.奇门遁甲宫 .中下 {
+    color: var(--大凶);
+}
+
+div.奇门遁甲宫 .格局.十干克应.凶,
+div.奇门遁甲宫 .格局.十干克应.刑 {
+    color: var(--大凶);
+}
+
+div.奇门遁甲宫 .奇格.三奇入墓,
+div.奇门遁甲宫 .奇格.天乙飞宫,
+div.奇门遁甲宫 .奇格.天乙伏宫,
+div.奇门遁甲宫 .奇格.六仪击刑,
+div.奇门遁甲宫 .奇格.三奇受制,
+div.奇门遁甲宫 .奇格.天网四张,
+div.奇门遁甲宫 .奇格.时干入墓,
+div.奇门遁甲宫 .奇格.星门入墓,
+div.奇门遁甲宫 .奇格.时干墓,
+div.奇门遁甲宫 .奇格.飞干格,
+div.奇门遁甲宫 .奇格.伏干格,
+div.奇门遁甲宫 .奇格.星伏吟,
+div.奇门遁甲宫 .奇格.门伏吟,
+div.奇门遁甲宫 .奇格.星反吟,
+div.奇门遁甲宫 .奇格.门反吟,
+div.奇门遁甲宫 .奇格.门迫,
+div.奇门遁甲宫 .奇格.宫迫,
+div.奇门遁甲宫 .奇格.击刑,
+div.奇门遁甲宫 .奇格.入墓,
+div.奇门遁甲宫 .奇格.岁格,
+div.奇门遁甲宫 .奇格.月格,
+div.奇门遁甲宫 .奇格.日格,
+div.奇门遁甲宫 .奇格.时格,
+div.奇门遁甲宫 .奇格.伏勃,
+div.奇门遁甲宫 .奇格.飞勃,
+div.奇门遁甲宫 .奇格.悖格,
+div.奇门遁甲宫 .奇格.天网华盖,
+div.奇门遁甲宫 .奇格.使入地牢,
+div.奇门遁甲宫 .奇格.天庭地户,
+div.奇门遁甲宫 .奇格.太白刑门,
+div.奇门遁甲宫 .奇格.地户蔽门,
+div.奇门遁甲宫 .奇格.乙奇入墓,
+div.奇门遁甲宫 .奇格.丙奇入墓,
+div.奇门遁甲宫 .奇格.丁奇入墓,
+div.奇门遁甲宫 .奇格.戊入墓,
+div.奇门遁甲宫 .奇格.己入墓,
+div.奇门遁甲宫 .奇格.庚入墓,
+div.奇门遁甲宫 .奇格.辛入墓,
+div.奇门遁甲宫 .奇格.壬入墓,
+div.奇门遁甲宫 .奇格.癸入墓,
+div.奇门遁甲宫 .奇格.戊击刑,
+div.奇门遁甲宫 .奇格.己击刑,
+div.奇门遁甲宫 .奇格.庚击刑,
+div.奇门遁甲宫 .奇格.辛击刑,
+div.奇门遁甲宫 .奇格.壬击刑,
+div.奇门遁甲宫 .奇格.癸击刑 {
+    color: var(--大凶);
+}
+
+div.奇门遁甲宫 .四害 {
+    color: var(--大凶);
+}
+
+div.奇门遁甲宫 .中平,
+div.奇门遁甲宫 .中中,
+div.奇门遁甲宫 .平平 {
+    color: var(--平);
+}
+
+div.奇门遁甲宫 .格局.十干克应.平,
+div.奇门遁甲宫 .格局.十干克应.门,
+div.奇门遁甲宫 .格局.十干克应.刑 {
+    color: var(--平);
+}
+
+div.奇门遁甲宫 .中上,
+div.奇门遁甲宫 .小吉,
+div.奇门遁甲宫 .下吉,
+div.奇门遁甲宫 .中吉,
+div.奇门遁甲宫 .上吉,
+div.奇门遁甲宫 .大吉,
+div.奇门遁甲宫 .上上 {
+    color: var(--吉);
+}
+
+div.奇门遁甲宫 .格局.十干克应.吉,
+div.奇门遁甲宫 .格局.十干克应.静吉,
+div.奇门遁甲宫 .格局.十干克应.动吉 {
+    color: var(--吉);
+}
+
+div.奇门遁甲宫 .奇格.三奇得使,
+div.奇门遁甲宫 .奇格.奇游禄位,
+div.奇门遁甲宫 .奇格.三奇贵人,
+div.奇门遁甲宫 .奇格.天运昌气,
+div.奇门遁甲宫 .奇格.奇仪相合,
+div.奇门遁甲宫 .奇格.天辅时,
+div.奇门遁甲宫 .奇格.欢怡,
+div.奇门遁甲宫 .奇格.交泰,
+div.奇门遁甲宫 .奇格.相佐,
+div.奇门遁甲宫 .奇格.月拱福户,
+div.奇门遁甲宫 .奇格.日照当门,
+div.奇门遁甲宫 .奇格.玉女守门,
+div.奇门遁甲宫 .奇格.天遁,
+div.奇门遁甲宫 .奇格.风遁,
+div.奇门遁甲宫 .奇格.地遁,
+div.奇门遁甲宫 .奇格.云遁,
+div.奇门遁甲宫 .奇格.神遁,
+div.奇门遁甲宫 .奇格.鬼遁,
+div.奇门遁甲宫 .奇格.龙遁,
+div.奇门遁甲宫 .奇格.人遁,
+div.奇门遁甲宫 .奇格.虎遁,
+div.奇门遁甲宫 .奇格.真诈,
+div.奇门遁甲宫 .奇格.重诈,
+div.奇门遁甲宫 .奇格.休诈,
+div.奇门遁甲宫 .奇格.天假,
+div.奇门遁甲宫 .奇格.地假,
+div.奇门遁甲宫 .奇格.物假,
+div.奇门遁甲宫 .奇格.鬼假,
+div.奇门遁甲宫 .奇格.人假,
+div.奇门遁甲宫 .奇格.神假 {
+    color: var(--吉);
+}
+
+div.奇门遁甲宫 div.先天.卦 {
+    font-size  : 3em;
+    font-family: "YaHei";
+}
+
+div.奇门遁甲宫 div.后天.卦,
+div.奇门遁甲宫 div.后天.卦象 {
+    font-size  : 3em;
+    font-family: "YaHei";
+}
+
+div.奇门遁甲宫 div.先天.卦象 {
+    font-size  : 3em;
+    font-family: "YaHei";
+}
+
+div.奇门遁甲宫 div.飞星 {
+    font-size         : 2em;
+    position          : unset;
+    user-select       : none;
+    color             : dimgrey;
+}
+
+div.奇门遁甲宫 .先天.卦 {
+    font-size     : 3em;
+    font-weight   : bold;
+    color         : rgb(105, 105, 105);
+    position      : absolute;
+    top           : 35%;
+    left          : 32%;
+    opacity       : 0.2;
+}
+
+div.奇门遁甲宫 .后天.卦,
+div.奇门遁甲宫 .后天.卦象 {
+    font-size     : 3em;
+    font-weight   : bold;
+    color         : rgb(105, 105, 105);
+    position      : absolute;
+    top           : 35%;
+    left          : 32%;
+    opacity       : 0.2;
+}
+
+div.奇门遁甲宫 .先天.卦象,
+div.奇门遁甲宫 .后先.卦,
+div.奇门遁甲宫 .先后.卦 {
+    font-size     : 3em;
+    font-weight   : bold;
+    color         : rgb(105, 105, 105);
+    position      : absolute;
+    top           : 33%;
+    left          : 37%;
+    opacity       : 0.2;
+} */
+
+/* div.奇门遁甲宫 .六十四卦.星卦 {
+    position: relative;
+    top     : .5em;
+}
+
+div.奇门遁甲宫 .六十四卦.门卦 {
+    position: relative;
+    top     : -.5em;
+} */
+/* div.奇门遁甲宫 div.后先.卦,
+div.奇门遁甲宫 div.先后.卦 {
+    font-size  : 2em;
+    user-select: none;
+} */
+/* 
+#奇门遁甲 .木 {
+    color: var(--木)
+}
+
+#奇门遁甲 .火 {
+    color: var(--火)
+}
+
+#奇门遁甲 .土 {
+    color: var(--土)
+}
+
+#奇门遁甲 .金 {
+    color: var(--金)
+}
+
+
+#奇门遁甲 .水 {
+    color: var(--水)
+}
+ */
+/* 
+
+
+td.奇门遁甲盘宫.坎宫:after,
+td.奇门遁甲盘宫.坤宫:after,
+td.奇门遁甲盘宫.震宫:after,
+td.奇门遁甲盘宫.巽宫:after,
+td.奇门遁甲盘宫.中宫:after,
+td.奇门遁甲盘宫.乾宫:after,
+td.奇门遁甲盘宫.兑宫:after,
+td.奇门遁甲盘宫.艮宫:after,
+td.奇门遁甲盘宫.离宫:after {
+    content      : '';
+    display      : block;
+    margin-top: 100%;
+}
+
+td.奇门遁甲盘宫.坎宫.content,
+td.奇门遁甲盘宫.坤宫.content,
+td.奇门遁甲盘宫.震宫.content,
+td.奇门遁甲盘宫.巽宫.content,
+td.奇门遁甲盘宫.中宫.content,
+td.奇门遁甲盘宫.乾宫.content,
+td.奇门遁甲盘宫.兑宫.content,
+td.奇门遁甲盘宫.艮宫.content,
+td.奇门遁甲盘宫.离宫.content {
+    position  : absolute;
+    top       : 0;
+    bottom    : 0;
+    left      : 0;
+    right     : 0;
+    background: gold;
+}
+
+*/
+/* #奇门遁甲 .马 {
+    line-height: 0;
+} */
+/*table.宫格,
+td.宫格,
+th.宫格 {
+    border: 1px solid;
+}*/
+
+.奇门遁甲宫 {
+    transform: scale(1) translate(0px, 0px);
+}
+
+div.奇门遁甲宫 .巳宫,
+div.奇门遁甲宫 .午宫,
+div.奇门遁甲宫 .未宫,
+div.奇门遁甲宫 .丑宫,
+div.奇门遁甲宫 .子宫,
+div.奇门遁甲宫 .亥宫 {
+    text-align: center;
+    padding   : 3px 0 3px 0;
+}
+
+div.奇门遁甲宫 .巳宫 div,
+div.奇门遁甲宫 .午宫 div,
+div.奇门遁甲宫 .未宫 div,
+div.奇门遁甲宫 .丑宫 div,
+div.奇门遁甲宫 .子宫 div,
+div.奇门遁甲宫 .亥宫 div {
+    display     : inline-flex;
+    margin-right: 5px;
+}
+
+div.奇门遁甲宫 .寅宫 div,
+div.奇门遁甲宫 .卯宫 div,
+div.奇门遁甲宫 .辰宫 div,
+div.奇门遁甲宫 .申宫 div,
+div.奇门遁甲宫 .酉宫 div,
+div.奇门遁甲宫 .戌宫 div {
+    text-align: center;
+    width     : 1.5em;
+}
+
+div.奇门遁甲宫 .寅宫,
+div.奇门遁甲宫 .卯宫,
+div.奇门遁甲宫 .辰宫 {
+    padding: 0 3px 0 3px;
+    width  : 2.5em;
+}
+
+div.奇门遁甲宫 td.申宫,
+div.奇门遁甲宫 td.酉宫,
+div.奇门遁甲宫 td.戌宫 {
+    padding: 0 3px 0 3px;
+    width  : 2.5em;
+}
+
+div.方向 {
+    /* width      : 5em; */
+    font-weight: bold;
+}
+
+div.奇门遁甲宫 td.内盘.空>div>div.空,
+div.奇门遁甲宫 td.外盘.空>div>div.空 {
+    padding-right: 2px;
+    padding-left : 2px;
+    /* border    : 1px solid var(--空); */
+}
+
+div.奇门遁甲宫 td.空 div.空.字 {
+    border: 1px solid var(--空);
+    color : red;
+}
+
+div.奇门遁甲宫 .仪空.label {
+    color: black;
+}
+
+/* div.奇门遁甲宫 td.寅宫 div.寅宫,
+div.奇门遁甲宫 td.卯宫 div.卯宫,
+div.奇门遁甲宫 td.辰宫 div.辰宫,
+div.奇门遁甲宫 td.申宫 div.申宫,
+div.奇门遁甲宫 td.酉宫 div.酉宫,
+div.奇门遁甲宫 td.戌宫 div.戌宫 {
+    writing-mode    : vertical-rl;
+    text-orientation: upright;
+} */
+/* div.奇门遁甲宫 td.寅宫,
+div.奇门遁甲宫 td.卯宫,
+div.奇门遁甲宫 td.辰宫,
+div.奇门遁甲宫 td.申宫,
+div.奇门遁甲宫 td.酉宫,
+div.奇门遁甲宫 td.戌宫 {
+    width: 1em;
+} */
+/* .年盘,
+.月盘,
+.日盘,
+.时盘,
+.刻盘 {
+    border-left : 1px solid lightgray;
+    border-top  : 1px solid lightgray;
+    border-right: 1px solid lightgray;
+} */
+/* div.奇门遁甲宫 td.奇格 {
+    width: 1em
+} */
+.中选 {
+    background-color: #d0d0fb;
+    /* !important; */
+    font-weight     : bold;
+}
+
+td.奇门遁甲盘宫.外盘 {
+    background-color   : var(--外盘);
+    /* font-size       : 1.2em; */
+}
+
+td.奇门遁甲盘宫.内盘 {
+    background-color   : var(--内盘);
+    /* font-size       : 1.2em; */
+    color              : var(--内盘字);
+    /*  #d5d5d5; */
+}
+
+div.季旺衰.旺,
+div.季旺衰.相 {
+    color: var(--大吉);
+}
+
+div.季旺衰.胎,
+div.季旺衰.休,
+div.季旺衰.没 {
+    color: var(--小吉);
+}
+
+div.季旺衰.死,
+div.季旺衰.囚,
+div.季旺衰.废 {
+    color: var(--大凶);
+}
+
+td.奇门遁甲盘宫.宫.外盘 {
+    background-color: var(--外盘宫);
+}
+
+td.奇门遁甲盘宫.宫.内盘 {
+    background-color: var(--内盘宫);
+}
+
+td1 {
+    border: 1px solid #222;
+}
+
+#奇门遁甲 .MuiButton-outlinedSizeSmall {
+    padding: 0;
+}
+
+#奇门遁甲 .MuiBadge-anchorOriginBottomRightRectangle {
+    transform: scale(0.6) translate(10px, 10px);
+}
+
+#奇门遁甲 .MuiIcon-root {
+    font-size: 1.3em;
+}
+
+/*.backslash1 span {
+    position: relative;
+    z-index: 2;
+}*/
+.backslash,
+.backslash内内,
+.backslash内外,
+.backslash外内,
+.backslash外外,
+.slash,
+.slash内内,
+.slash内外,
+.slash外内,
+.slash外外 {
+    position          : relative;
+    /*width           : 20px;
+  height              : 10px;*/
+    text-align        : center;
+}
+
+.backslash:before,
+.backslash内内:before,
+.backslash内外:before,
+.backslash外内:before,
+.backslash外外:before,
+.backslash:after,
+.backslash内内:after,
+.backslash内外:after,
+.backslash外内:after,
+.backslash外外:after,
+.slash内内:after,
+.slash内外:after,
+.slash外内:after,
+.slash外外:after {
+    content : "";
+    position: absolute;
+    left    : 0;
+    top     : 0;
+    right   : 0;
+    bottom  : 0;
+    z-index : 1;
+}
+
+/*.slash:before,*/
+.backslash:before {
+    background: linear-gradient(to top right, var(--外盘) calc(50% - var(--lineWidth)), var(--line) 50%, var(--外盘) calc(50% + var(--lineWidth)));
+}
+
+.backslash内内:before {
+    background: linear-gradient(to top right, var(--内盘) calc(50% - var(--lineWidth)), var(--line) 50%, var(--内盘) calc(50% + var(--lineWidth)));
+}
+
+.backslash内外:before {
+    background: linear-gradient(to top right, var(--内盘) calc(50% - var(--lineWidth)), var(--line) 50%, var(--外盘) calc(50% + var(--lineWidth)));
+}
+
+.backslash外内:before {
+    background: linear-gradient(to top right, var(--外盘) calc(50% - var(--lineWidth)), var(--line) 50%, var(--内盘) calc(50% + var(--lineWidth)));
+}
+
+.backslash外外:before {
+    background: linear-gradient(to top right, var(--外盘) calc(50% - var(--lineWidth)), var(--line) 50%, var(--外盘) calc(50% + var(--lineWidth)));
+}
+
+/*.backslash1:after {
+    background: linear-gradient(to left top, transparent calc(50% - 1px), var(--line) 50%, transparent calc(50% + 1px) );
+}
+
+.slash1:before {
+    background: linear-gradient(to top right, transparent calc(50% - 1px), var(--line) 50%, transparent calc(50% + 1px) );
+}*/
+.slash:after {
+    background: linear-gradient(to left top, var(--外盘) calc(50% - 1px), var(--line) 50%, var(--外盘) calc(50% + var(--lineWidth)));
+}
+
+.slash内内:after {
+    background: linear-gradient(to left top, var(--内盘) calc(50% - 1px), var(--line) 50%, var(--内盘) calc(50% + var(--lineWidth)));
+}
+
+.slash内外:after {
+    background: linear-gradient(to left top, var(--内盘) calc(50% - 1px), var(--line) 50%, var(--外盘) calc(50% + var(--lineWidth)));
+}
+
+.slash外内:after {
+    background: linear-gradient(to left top, var(--外盘) calc(50% - 1px), var(--line) 50%, var(--内盘) calc(50% + var(--lineWidth)));
+}
+
+.slash外外:after {
+    background: linear-gradient(to left top, var(--外盘) calc(50% - 1px), var(--line) 50%, var(--外盘) calc(50% + var(--lineWidth)));
+}
+
+/*# sourceMappingURL=qmdj.css.map */

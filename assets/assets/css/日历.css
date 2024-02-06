@@ -1,0 +1,342 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "LianHei";
+  src: url("/font/FZYLHJW.woff") format("woff");
+}
+@font-face {
+  font-family: "MyRiadPro";
+  src: url("/font/MYRIADPRO-REGULAR.woff") format("woff");
+}
+.日历页 {
+  font-family: "LianHei";
+}
+.日历页 td {
+  vertical-align: top;
+}
+.日历页, .日历页 tr, .日历页 td {
+  border-collapse: collapse;
+}
+.日历页 .label {
+  color: white;
+  background-color: rgba(19, 163, 198, 0.9);
+  margin-bottom: 5px;
+}
+.日历页 .label .英 {
+  display: block;
+  font-size: 60%;
+}
+.日历页 td.header {
+  font-size: 1.5em;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px;
+}
+.日历页 table.日.左 {
+  text-transform: uppercase;
+  text-align: center;
+  border-collapse: collapse;
+  border: 2px solid #555152;
+  width: 400px;
+}
+.日历页 table.日.左 .日期 {
+  background-color: rgba(242, 214, 226, 0.9);
+  color: #5e2432;
+  border-collapse: collapse;
+}
+.日历页 table.日.左 .日期 .公历,
+.日历页 table.日.左 .日期 .农历 {
+  display: block;
+}
+.日历页 table.日.左 .日期 .农历 {
+  font-size: 2em;
+}
+.日历页 table.日.左 .日期 .公历 {
+  font-size: 3em;
+}
+.日历页 table.日.左 .日期 .公历日 {
+  font-family: "MyRiadPro";
+  font-size: 14em;
+  color: #5e2432;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  line-height: 1em;
+}
+.日历页 table.日.左 .日期 .星期 {
+  font-size: 1.5em;
+}
+.日历页 table.日.左 tr.下 {
+  padding: 0;
+}
+.日历页 table.日.左 tr.下 td {
+  border-left: 2px solid #555152;
+  border-right: 2px solid #555152;
+  border-collapse: collapse;
+  padding: 0;
+  width: 133.3333333333px;
+  background-color: #fcf6f8;
+}
+.日历页 table.日.左 tr.下 .英 {
+  font-size: 55%;
+}
+.日历页 table.日.左 tr.下 .吉,
+.日历页 table.日.左 tr.下 .凶 {
+  text-transform: capitalize;
+}
+.日历页 table.日.左 tr.下 .吉 div,
+.日历页 table.日.左 tr.下 .凶 div {
+  text-align: left;
+  padding-left: 12px;
+  font-size: 90%;
+}
+.日历页 table.日.左 tr.下 .后天八卦方位 {
+  padding: 4px;
+}
+.日历页 table.日.左 tr.下 .后天八卦方位 img {
+  width: 3em;
+  display: inline-block;
+}
+.日历页 table.日.左 tr.下 .后天八卦方位 .中 {
+  font-size: 1.5em;
+}
+.日历页 table.日.左 tr.下 .后天八卦方位 > div {
+  display: inline-block;
+  width: 4em;
+  vertical-align: top;
+}
+.日历页 table.日.左 tr.下 .奇门三胜宫 {
+  height: 259px;
+}
+.日历页 table.日.左 tr.下 .语录 {
+  height: 110px;
+  color: #654836;
+  font-size: 1.04em;
+  vertical-align: middle;
+  text-transform: none;
+  text-align: left;
+  padding: 5px;
+}
+.日历页 tr.footer img {
+  width: 1.5em;
+  display: inline-block;
+}
+.日历页 tr.footer div {
+  display: inline-block;
+  color: red;
+  vertical-align: top;
+}
+.日历页 h5 {
+  line-height: 0;
+  margin-bottom: 13px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.日历页 .吉 {
+  color: #fb2c60;
+}
+.日历页 .凶 {
+  color: #555152;
+}
+.日历页 td.十二值神,
+.日历页 td.十二值 {
+  background-color: #fcf6f8;
+  text-align: center;
+  color: #555152;
+}
+.日历页 table.日.右 {
+  text-transform: uppercase;
+  width: 400px;
+  border-collapse: collapse;
+  text-align: center;
+  border-top: 2px solid #555152;
+}
+.日历页 table.日.右 tr.八字 {
+  text-align: center;
+  width: 400px;
+  margin-left: 10px;
+}
+.日历页 table.日.右 tr.八字, .日历页 table.日.右 tr.八字 > td {
+  border-left: 2px solid #555152;
+  border-right: 2px solid #555152;
+  border-collapse: collapse;
+  padding: 0;
+  background-color: #fcf6f8;
+}
+.日历页 table.日.右 tr.八字 td {
+  width: 33%;
+}
+.日历页 table.日.右 tr.八字 .八字柱 {
+  margin: 10px;
+}
+.日历页 table.日.右 tr.八字 .天干,
+.日历页 table.日.右 tr.八字 .地支 {
+  font-size: 250%;
+}
+.日历页 table.日.右 tr.八字 .天干.拼音, .日历页 table.日.右 tr.八字 .天干.英文,
+.日历页 table.日.右 tr.八字 .地支.拼音,
+.日历页 table.日.右 tr.八字 .地支.英文 {
+  font-size: 80%;
+}
+.日历页 table.日.右 td.十二值, .日历页 table.日.右 td.十二值神, .日历页 table.日.右 td.玄空飞星 {
+  border-left: 2px solid #555152;
+  border-right: 2px solid #555152;
+  border-bottom: 2px solid #555152;
+  padding: 0;
+  border-collapse: collapse;
+  background-color: #fcf6f8;
+  width: 33%;
+  height: 9em;
+  text-align: center;
+}
+.日历页 table.日.右 td .十二值.中,
+.日历页 table.日.右 td .十二值神.中,
+.日历页 table.日.右 td .二十八星宿.中 {
+  color: #555152;
+  display: block;
+  font-size: 2.8em;
+}
+.日历页 table.日.右 td .十二值.英,
+.日历页 table.日.右 td .十二值神.英,
+.日历页 table.日.右 td .二十八星宿.英 {
+  font-size: 60%;
+}
+.日历页 table.日.右 td.玄空飞星 .日飞星,
+.日历页 table.日.右 td.玄空飞星 .月飞星,
+.日历页 table.日.右 td.玄空飞星 .年飞星 {
+  border-collapse: collapse;
+  margin: 3px auto;
+}
+.日历页 table.日.右 td.玄空飞星 .日飞星 td,
+.日历页 table.日.右 td.玄空飞星 .月飞星 td,
+.日历页 table.日.右 td.玄空飞星 .年飞星 td {
+  vertical-align: middle;
+  border-collapse: collapse;
+  border: 1px solid gray;
+  width: 2em;
+  height: 2em;
+  text-align: center;
+}
+.日历页 table.日.右 td.玄空飞星 .日飞星 div,
+.日历页 table.日.右 td.玄空飞星 .月飞星 div,
+.日历页 table.日.右 td.玄空飞星 .年飞星 div {
+  display: inline;
+}
+.日历页 table.日.右 td.玄空飞星 .SW,
+.日历页 table.日.右 td.玄空飞星 .S,
+.日历页 table.日.右 td.玄空飞星 .SE,
+.日历页 table.日.右 td.玄空飞星 .E,
+.日历页 table.日.右 td.玄空飞星 .Z,
+.日历页 table.日.右 td.玄空飞星 .W,
+.日历页 table.日.右 td.玄空飞星 .NW,
+.日历页 table.日.右 td.玄空飞星 .N,
+.日历页 table.日.右 td.玄空飞星 .NE {
+  font-weight: b;
+  font-size: 50%;
+  color: #b5a1a1;
+}
+.日历页 table.日.右 tr.奇门遁甲 {
+  height: 438px;
+}
+.日历页 table.日.右 tr.奇门遁甲 table.奇门遁甲盘宫 {
+  width: 680px;
+  height: 680px;
+}
+.日历页 table.日.右 tr.奇门遁甲 .奇门遁甲宫 {
+  transform: scale(0.5882352941);
+  margin-top: -50px;
+  margin-left: -85px;
+  width: 400px;
+  height: 400px;
+}
+
+.三胜宫 {
+  font-size: 1.07em;
+}
+
+table.三胜宫,
+table.三胜宫 table tr,
+table.三胜宫 table td {
+  border-collapse: collapse;
+  border: none;
+  text-align: center;
+  margin: auto;
+}
+table.三胜宫 table td {
+  width: 8em;
+}
+table.三胜宫 td.六十四卦.象 {
+  width: 1em;
+}
+table.三胜宫,
+table.三胜宫 tr,
+table.三胜宫 td,
+table.三胜宫 th {
+  border-collapse: collapse;
+  border: 1px solid #636162;
+  text-align: center;
+  margin: auto;
+}
+
+.色.绿,
+.衣着.绿 {
+  color: #12674a;
+}
+.色.青,
+.衣着.青 {
+  color: green;
+}
+.色.浅蓝,
+.衣着.浅蓝 {
+  color: #03A9F4;
+}
+.色.红,
+.衣着.红 {
+  color: red;
+}
+.色.紫,
+.衣着.紫 {
+  color: purple;
+}
+.色.粉红,
+.衣着.粉红 {
+  color: #F48FB1;
+}
+.色.黄,
+.衣着.黄 {
+  color: yellow;
+}
+.色.茶,
+.衣着.茶 {
+  color: #D7CCC8;
+  /* #BFB5A2; */
+}
+.色.褐,
+.衣着.褐 {
+  color: #795548;
+}
+.色.白,
+.衣着.白 {
+  color: white;
+}
+.色.金,
+.衣着.金 {
+  color: gold;
+}
+.色.银,
+.衣着.银 {
+  color: silver;
+}
+.色.黑,
+.衣着.黑 {
+  color: black;
+}
+.色.深蓝,
+.衣着.深蓝 {
+  color: #1565C0;
+}
+.色.深灰,
+.衣着.深灰 {
+  color: #424242;
+}
+
+/*# sourceMappingURL=%E6%97%A5%E5%8E%86.css.map */

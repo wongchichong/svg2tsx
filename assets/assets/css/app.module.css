@@ -1,0 +1,11 @@
+.styles-header {
+  font-size: 50px;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+.styles-image {
+  width: 90px;
+  height: 90px;
+  margin: 25px 0 0 0;
+}/*# sourceMappingURL=app.module.css.map */

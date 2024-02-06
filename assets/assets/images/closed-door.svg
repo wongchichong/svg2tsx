@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Capa_1"
+   x="0px"
+   y="0px"
+   width="326.84"
+   height="435.789"
+   viewBox="0 0 326.84 435.789"
+   xml:space="preserve"
+   sodipodi:docname="closed-door.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"><metadata
+   id="metadata11"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+   id="defs9" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="707"
+   inkscape:window-height="480"
+   id="namedview7"
+   showgrid="false"
+   fit-margin-top="0"
+   fit-margin-left="0"
+   fit-margin-right="0"
+   fit-margin-bottom="0"
+   inkscape:zoom="0.54154648"
+   inkscape:cx="163.4205"
+   inkscape:cy="217.8945"
+   inkscape:window-x="0"
+   inkscape:window-y="0"
+   inkscape:window-maximized="0"
+   inkscape:current-layer="Capa_1" />
+    <g
+   style="fill:#000000;stroke:none"
+   id="g4"
+   transform="translate(-54.474)">
+        <path
+   d="m 369.21,435.789 c -6.68,0 -12.105,-5.426 -12.105,-12.104 V 24.21 H 78.684 v 399.474 c 0,6.679 -5.423,12.104 -12.105,12.104 -6.682,0 -12.105,-5.426 -12.105,-12.104 V 12.105 C 54.474,5.423 59.897,0 66.579,0 H 369.21 c 6.679,0 12.104,5.423 12.104,12.105 v 411.579 c 10e-4,6.679 -5.425,12.105 -12.104,12.105 z M 341.973,45.395 V 423.684 H 93.816 V 45.395 Z m -187.631,192.17 c 0,-10.863 -7.451,-19.67 -16.645,-19.67 -9.194,0 -16.645,8.807 -16.645,19.67 0,10.864 7.451,19.672 16.645,19.672 9.194,0 16.645,-8.808 16.645,-19.672 z"
+   id="path2"
+   inkscape:connector-curvature="0" />
+    </g>
+</svg>

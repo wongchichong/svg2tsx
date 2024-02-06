@@ -1,0 +1,429 @@
+﻿$table_background_color : rgb(252, 246, 248);
+$text_color             :rgb(85, 81, 82);
+$blue_background_color  : rgba(19, 163, 198, 0.9);
+$Width                  : 400px;
+
+// @font-face {
+//     font-family     : 'LianHei';
+//     /* webpackIgnore: true */
+//     src             : url(/font/FZYLHJW.woff) format('woff');
+// }
+
+// @font-face {
+//     font-family     : 'MyRiadPro';
+//     /* webpackIgnore: true */
+//     src             : url(/font/MYRIADPRO-REGULAR.woff) format('woff');
+// }
+
+.日历页 {
+    font-family: 'LianHei';
+
+    td {
+        vertical-align: top;
+    }
+
+    &,
+    & tr,
+    & td {
+        border-collapse: collapse;
+    }
+
+    .label {
+        color           : white;
+        background-color: $blue_background_color;
+        margin-bottom   : 5px;
+
+        .英 {
+            display  : block;
+            font-size: 60%;
+        }
+    }
+
+    td.header {
+        font-size     : 1.5em;
+        text-align    : center;
+        text-transform: uppercase;
+        padding       : 10px;
+    }
+
+    table.日.左 {
+        text-transform : uppercase;
+        text-align     : center;
+        border-collapse: collapse;
+        border         : 2px solid $text_color;
+        width          : $Width;
+
+        .日期 {
+            background-color   : rgba(242, 214, 226, .9);
+            color              : rgb(94, 36, 50);
+            border-collapse    : collapse;
+            // border          : 2px solid $text_color;
+
+            .公历,
+            .农历 {
+                display: block;
+            }
+
+            .农历 {
+                font-size: 2em;
+            }
+
+            .公历 {
+                font-size: 3em;
+            }
+
+            .公历日 {
+                font-family: 'MyRiadPro';
+                font-size  : 14em;
+                color      : rgb(94, 36, 50);
+                font-weight: bold;
+                display    : block;
+                text-align : center;
+                line-height: 1em;
+            }
+
+            .星期 {
+                font-size: 1.5em;
+            }
+        }
+
+
+        tr.下 {
+            padding: 0;
+
+            td {
+                border-left     : 2px solid $text_color;
+                border-right    : 2px solid $text_color;
+                border-collapse : collapse;
+                padding         : 0;
+                width           : calc($Width/3);
+                background-color: $table_background_color;
+            }
+
+            .英 {
+                font-size: 55%;
+            }
+
+            .吉,
+            .凶 {
+                text-transform: capitalize;
+
+                div {
+                    text-align  : left;
+                    padding-left: 12px;
+                    font-size   : 90%;
+                }
+            }
+
+            .后天八卦方位 {
+                padding: 4px;
+
+                img {
+                    width  : 3em;
+                    display: inline-block;
+                }
+
+                .中 {
+                    font-size: 1.5em;
+                }
+
+                &>div {
+                    display       : inline-block;
+                    width         : 4em;
+                    vertical-align: top;
+                }
+            }
+
+            .奇门三胜宫 {
+                height: 259px;
+            }
+
+            .语录 {
+                height        : 110px;
+                color         : rgb(101, 72, 54);
+                font-size     : 1.04em;
+                vertical-align: middle;
+                text-transform: none;
+                text-align    : left;
+                padding       : 5px;
+            }
+        }
+    }
+
+    tr.footer {
+        img {
+            width  : 1.5em;
+            display: inline-block;
+        }
+
+        div {
+            display       : inline-block;
+            color         : red;
+            vertical-align: top;
+        }
+    }
+
+    h5 {
+        line-height          : 0;
+        margin-bottom        : 13px;
+        text-decoration      : underline;
+        text-underline-offset: 3px;
+    }
+
+    .吉 {
+        color: rgb(251, 44, 96);
+    }
+
+    .凶 {
+        color: $text_color;
+    }
+
+    td.十二值神,
+    td.十二值 {
+        background-color: $table_background_color;
+        text-align      : center;
+        color           : $text_color;
+    }
+
+    table.日.右 {
+        text-transform    : uppercase;
+        width             : $Width;
+        border-collapse   : collapse;
+        text-align        : center;
+        border-top        : 2px solid $text_color;
+        // border-bottom  : 2px solid $text_color;
+
+        tr.八字 {
+            text-align : center;
+            width      : $Width;
+            margin-left: 10px;
+
+            &,
+            &>td {
+                border-left     : 2px solid $text_color;
+                border-right    : 2px solid $text_color;
+                border-collapse : collapse;
+                padding         : 0;
+                background-color: $table_background_color;
+            }
+
+            td {
+                width: 33%
+            }
+
+            .八字柱 {
+                margin: 10px;
+            }
+
+            .天干,
+            .地支 {
+                font-size: 250%;
+
+                &.拼音,
+                &.英文 {
+                    font-size: 80%;
+                }
+            }
+        }
+
+        td {
+
+            &.十二值,
+            &.十二值神,
+            &.玄空飞星 {
+                border-left    : 2px solid $text_color;
+                border-right   : 2px solid $text_color;
+                border-bottom  : 2px solid $text_color;
+                padding        : 0;
+                border-collapse: collapse;
+
+                background-color: $table_background_color;
+                width           : 33%;
+                height          : 9em;
+                text-align      : center;
+            }
+
+            .十二值,
+            .十二值神,
+            .二十八星宿 {
+                &.中 {
+                    color    : rgb(85, 81, 82);
+                    display  : block;
+                    font-size: 2.8em;
+                }
+
+                &.英 {
+                    font-size: 60%;
+                }
+            }
+
+            &.玄空飞星 {
+
+                .日飞星,
+                .月飞星,
+                .年飞星 {
+                    border-collapse: collapse;
+                    margin         : 3px auto;
+
+                    td {
+                        vertical-align : middle;
+                        border-collapse: collapse;
+                        border         : 1px solid gray;
+                        width          : 2em;
+                        height         : 2em;
+                        text-align     : center;
+                    }
+
+                    div {
+                        display: inline;
+                    }
+                }
+
+                .SW,
+                .S,
+                .SE,
+                .E,
+                .Z,
+                .W,
+                .NW,
+                .N,
+                .NE {
+                    font-weight: b;
+                    font-size  : 50%;
+                    color      : #b5a1a1;
+                }
+            }
+        }
+
+        tr.奇门遁甲 {
+            height: $Width+38;
+
+            $qimen_square: 680px;
+
+            table.奇门遁甲盘宫 {
+                width : $qimen_square;
+                height: $qimen_square;
+            }
+
+            .奇门遁甲宫 {
+                transform  : scale(calc($Width/$qimen_square));
+                margin-top : -50px;
+                margin-left: -85px;
+                width      : $Width;
+                height     : $Width;
+            }
+        }
+    }
+}
+
+
+.三胜宫 {
+    font-size: 1.07em;
+}
+
+table.三胜宫 {
+
+    &,
+    table tr,
+    table td {
+        border-collapse: collapse;
+        border         : none;
+        text-align     : center;
+        margin         : auto;
+    }
+
+    table td {
+        width: 8em;
+    }
+
+    td.六十四卦.象 {
+        width: 1em;
+    }
+
+    &,
+    tr,
+    td,
+    th {
+        border-collapse: collapse;
+        border         : 1px solid rgb(99, 97, 98);
+        text-align     : center;
+        margin         : auto;
+    }
+}
+
+// th.日历.三胜宫.main.header {
+//     background-color: rgb(251, 235, 25);
+// }
+
+// th.日历.三胜宫.header {
+//     background-color: rgb(216, 212, 213);
+// }
+
+// table.日历.三胜宫 {
+//     text-align: center;
+// }
+
+
+.色,
+.衣着 {
+    &.绿 {
+        color: rgb(18, 103, 74);
+    }
+
+    &.青 {
+        color: green;
+    }
+
+    &.浅蓝 {
+        color: #03A9F4;
+    }
+
+    &.红 {
+        color: red;
+    }
+
+    &.紫 {
+        color: purple;
+    }
+
+    &.粉红 {
+        color: #F48FB1;
+    }
+
+    &.黄 {
+        color: yellow;
+    }
+
+    &.茶 {
+        color: #D7CCC8;
+        /* #BFB5A2; */
+    }
+
+    &.褐 {
+        color: #795548;
+    }
+
+    &.白 {
+        color: white;
+    }
+
+    &.金 {
+        color: gold;
+    }
+
+    &.银 {
+        color: silver;
+    }
+
+    &.黑 {
+        color: black;
+    }
+
+    &.深蓝 {
+        color: #1565C0;
+    }
+
+    &.深灰 {
+        color: #424242;
+    }
+}

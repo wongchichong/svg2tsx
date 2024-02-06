@@ -1,0 +1,223 @@
+@charset "UTF-8";
+@import url("core.css");
+
+#奇门遁甲 div.命盘表>div:first-of-type {
+    border            : solid 1px #555;
+    box-shadow        : 5px 5px 5px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow   : 5px 5px 5px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+    -o-box-shadow     : 5px 5px 5px rgba(0, 0, 0, 0.6);
+    border-radius     : 10px;
+    padding           : 12px;
+}
+
+#奇门遁甲 td.奇门遁甲盘宫.宫.命 {
+    transform         : scale(1.06);
+    z-index           : 2;
+    display           : block;
+    border            : 10px solid;
+    box-shadow        : 0px 3px 3px -2px rgb(238, 64, 153), 0px 3px 4px 0px rgb(238, 64, 153), 0px 1px 8px 0px rgb(238, 64, 153);
+    -moz-box-shadow   : 0px 3px 3px -2px rgb(238, 64, 153), 0px 3px 4px 0px rgb(238, 64, 153), 0px 1px 8px 0px rgb(238, 64, 153);
+    -webkit-box-shadow: 0px 3px 3px -2px rgb(238, 64, 153), 0px 3px 4px 0px rgb(238, 64, 153), 0px 1px 8px 0px rgb(238, 64, 153);
+    -o-box-shadow     : 0px 3px 3px -2px rgb(238, 64, 153), 0px 3px 4px 0px rgb(238, 64, 153), 0px 1px 8px 0px rgb(238, 64, 153);
+}
+
+#奇门遁甲 table.命盘表,
+#奇门遁甲 table.行动䇿略 {
+    max-width: 800px;
+}
+
+#奇门遁甲 table.命盘 {
+    margin: 0 auto;
+}
+
+#奇门遁甲 table.命盘 td {
+    text-align: left;
+}
+
+#奇门遁甲 table.命盘 div.命盘 {
+    font-family: "YaHei";
+    color      : magenta;
+    display    : flex;
+    font-size  : 50%;
+    line-height: 1.1em;
+}
+
+#奇门遁甲 table.命盘 div.命盘 div.中文,
+#奇门遁甲 table.命盘 div.命盘 div.英文 {
+    display    : inline-block;
+    white-space: nowrap;
+}
+
+#奇门遁甲 div.命盘 div:not(:first-of-type):not(:last-child) {
+    margin-left : 3px;
+    margin-right: 3px;
+}
+
+#奇门遁甲 .命盘表建议 {
+    /* font-weight: bold; */
+    /* font-family: 'YaHei'; */
+    /* font-size  : 1.2em; */
+    font-style: italic;
+}
+
+#奇门遁甲 div.命盘表 .字 {
+    display: block;
+}
+
+#奇门遁甲 div.命盘表 .字 div {
+    padding: 10px;
+}
+
+#奇门遁甲 div.行动䇿略.字 div {
+    padding: 10px;
+}
+
+#奇门遁甲 .命盘表 {
+    padding: 5px 10px 5px 0;
+}
+
+#奇门遁甲 .命盘表.命宫.门,
+#奇门遁甲 .命盘表.命宫.星,
+#奇门遁甲 .命盘表.命宫.神 {
+    color    : red;
+    font-size: 150%;
+}
+
+#奇门遁甲 .命盘表 .财帛.空亡,
+#奇门遁甲 .命盘表 .命仪 {
+    color    : red;
+    font-size: 150%;
+}
+
+#奇门遁甲 .中宫 div.大运 {
+    display  : none;
+    font-size: 0.7em;
+}
+
+#奇门遁甲 .星期日 {
+    color: red;
+}
+
+#奇门遁甲 div.大运 {
+    color    : blue;
+    font-size: 0.7em;
+}
+
+#奇门遁甲 div.命盘表 .点 {
+    padding: 6px 30px 10px 60px;
+}
+
+#奇门遁甲 .命盘表 h2 {
+    border-radius: unset;
+    font-weight  : bold;
+    font-size    : 14pt;
+    line-height  : 0;
+    color        : #00B0F0;
+    margin-top   : 2em;
+}
+
+#奇门遁甲 .命盘表 h3 {
+    border-radius: unset;
+    font-size    : 12pt;
+    line-height  : 0;
+    color        : #00B0F0;
+}
+
+#奇门遁甲 .命盘表 h4 {
+    font-weight: bold;
+}
+
+#奇门遁甲 div.命盘表>div:first-of-type {
+    /* width             : 350px; */
+    /* height            : 200px; */
+    /* border         : 1px solid lightgray;
+  borderCollapse    : collapse;
+  backgroundColor   : #FEFACB;
+  fontSize          : 150%; */
+}
+
+#奇门遁甲 div.行动䇿略>div.行动䇿略:first-of-type {
+    /* width             : 350px; */
+    /* height            : 200px; */
+    border            : solid 1px #555;
+    box-shadow        : 5px 5px 5px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow   : 5px 5px 5px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+    -o-box-shadow     : 5px 5px 5px rgba(0, 0, 0, 0.6);
+    border-radius     : 10px;
+    padding           : 12px;
+    /* border         : 1px solid lightgray;
+  borderCollapse      : collapse;
+  backgroundColor     : #FEFACB;
+  fontSize            : 150%; */
+}
+
+#奇门遁甲 table.时盘.中选,
+#奇门遁甲 div.时盘.中选,
+#奇门遁甲 th.时盘.中选,
+#奇门遁甲 td.时盘.中选 {
+    background-color: unset;
+}
+
+/* #奇门遁甲 div.命盘表 .头,
+#奇门遁甲 div.行动䇿略.头 {
+    background     : linear-gradient(to right, rgb(245, 241, 144), rgb(238, 64, 153));
+    border         : 1px solid black;
+    border-collapse: collapse;
+    border-radius  : 10px;
+    font-size      : 200%;
+    padding        : 10px;
+    font-weight    : bold;
+    font-family    : 'YaHei';
+} */
+/* div.奇门遁甲宫 td.奇门遁甲盘宫.坎宫,
+div.奇门遁甲宫 td.奇门遁甲盘宫.坤宫,
+div.奇门遁甲宫 td.奇门遁甲盘宫.震宫,
+div.奇门遁甲宫 td.奇门遁甲盘宫.巽宫,
+div.奇门遁甲宫 td.奇门遁甲盘宫.中宫,
+div.奇门遁甲宫 td.奇门遁甲盘宫.乾宫,
+div.奇门遁甲宫 td.奇门遁甲盘宫.兑宫,
+div.奇门遁甲宫 td.奇门遁甲盘宫.艮宫,
+div.奇门遁甲宫 td.奇门遁甲盘宫.离宫 {
+    width : 20em;
+    height: 20em;
+} */
+div.奇门遁甲宫 .先天.卦 {
+    top : 1.2em;
+    left: 1.5em;
+}
+
+div.奇门遁甲宫 .后天.卦,
+div.奇门遁甲宫 .后天.卦象 {
+    top : 1.2em;
+    left: 1.5em;
+}
+
+div.奇门遁甲宫 .先天.卦象,
+div.奇门遁甲宫 .后先.卦,
+div.奇门遁甲宫 .先后.卦 {
+    top : 1.2em;
+    left: 1.5em;
+}
+
+li.命盘表 .字 {
+    list-style-type: none;
+}
+
+@media print {
+    .奇门遁甲宫 {
+        transform    : scale(0.8) translate(0px, 0px);
+        margin-top   : -90px;
+        margin-bottom: -45px;
+    }
+
+    .qmdjmp-cover-background {
+        font-weight    : bold;
+        text-align     : center;
+        color          : white;
+        background-size: contain;
+    }
+}
+
+/*# sourceMappingURL=qmdjmp.css.map */
