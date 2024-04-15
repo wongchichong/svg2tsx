@@ -81,7 +81,7 @@ svgFiles.forEach((svgFilePath) => {
       fs.mkdirSync(od, { recursive: true });
     const outputFilePath = `${od}/${snakeToCamel(fileName)}.tsx`;
     const wrappedSvg = `
-import { type JSX } from 'voby'
+import { type JSX } from 'woby'
 export default (props: JSX.SVGAttributes<SVGElement>) => ${insertPropsIntoSvg(comment(svgo.optimize(svgContent, {
       multipass: true,
       js2svg: {

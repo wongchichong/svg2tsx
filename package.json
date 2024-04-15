@@ -11,10 +11,14 @@
         "registry": "https://registry.npmjs.org/"
     },
     "scripts": {
-        "release": "git add . && git commit -m \"Bump version\" git push && pnpm version patch",
+        "git": "git add . && git commit -m \"Bump version\" && git push",
+        "bump": "pnpm version patch",
+        "npmjs": "pnpm publish",
+        "release": "run-s -c git bump npmjs",
+        "//lib": "babel src/rodal.js --out-file lib/rodal.js && BABEL_MODULE=es babel src/rodal.js --out-file lib/rodal.esm.js && cp src/rodal.css lib",
         "preinstall": "npx only-allow pnpm",
         "web": "vite --force --mode dev --host",
-        "build": "vite build --config vite.config.ts",
+        "build": "vite build --config vite.config.mts",
         "watch": "tsc --watch --project tsconfig.build.json",
         "test": "node --watch ./cli/index.js",
         "clean": "rimraf dist cli public build",
@@ -27,7 +31,7 @@
     ],
     "devDependencies": {
         "glob": "^10.3.10",
-        "vite": "^4.4.11",
+        "vite": "^5.2.8",
         "yargs": "^17.7.2"
     },
     "dependencies": {
